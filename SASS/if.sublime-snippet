@@ -1,0 +1,15 @@
+<snippet>
+	<content>
+	<![CDATA[@if \$${1:variable} == ${3:option1} {
+		${5:condition1}
+	} 
+	${2:@else if \$${1:variable} == ${4:option2} {
+		${6:condition2}
+	\} 
+	}@else {
+		${7:condition3}
+	}]]>
+	</content>
+	<tabTrigger>if</tabTrigger>
+	<description>If Else</description>
+</snippet>

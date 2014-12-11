@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+<i class="icon-${1:ok}"></i>
+]]></content>
+  <tabTrigger>icon</tabTrigger>
+    <description>Fontastic icon</description>
+</snippet>

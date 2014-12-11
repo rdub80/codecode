@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include word-wrap;
+]]>
+	</content>
+	<tabTrigger>wordwrap</tabTrigger>
+	<description>Word Wrap</description>
+</snippet>

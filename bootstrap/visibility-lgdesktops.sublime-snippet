@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+visible-lg
+]]></content>
+  <tabTrigger>visibility</tabTrigger>
+  <description>large desktops only (1200px+)</description>
+</snippet>

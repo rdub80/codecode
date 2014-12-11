@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+    <![CDATA[
+    ${2:<!-- OPTIONS: progress|fade|fadedown|fadeup|faderight|fadeleft|appear|touchleft|touchright|zoom|blur -->
+    }@include animate(${1:fade});
+    ]]>
+  </content>
+  <tabTrigger>animate</tabTrigger>
+  <description>Animate Object</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+	<content>
+<![CDATA[
+${1:@media screen and (min-width: 1200px) { 
+	${6:/* larger desktop-only styles go here */}
+\}
+}${2:@media screen and (min-width: 980px) and (max-width: 1199px) {
+	${7:/* smaller desktop-only styles go here */}
+\}
+}${3:@media screen and (min-width: 768px) and (max-width: 979px) {
+	${8:/* smallest desktop-only styles go here */}
+\}
+}${4:@media screen and (max-width: 767px) {
+	${9:/* tablet-and-phone-only styles go here */}
+\}
+}${5:@media screen and (max-width: 480px) {
+	${10:/* phone-portrait-only styles go here */}
+\}}
+]]>
+	</content>
+	<tabTrigger>media</tabTrigger>
+	<description>Bootstrap, strict</description>
+</snippet>

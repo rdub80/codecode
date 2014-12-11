@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include ellipsis;
+]]>
+	</content>
+	<tabTrigger>ellipsis</tabTrigger>
+	<description>Ellipsis</description>
+</snippet>

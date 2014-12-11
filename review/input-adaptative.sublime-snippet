@@ -1,0 +1,16 @@
+<snippet>
+	<content>
+<![CDATA[
+${2:/* 
+1. make sure it's wrapped in a form.
+2. either form should have class adaptative (for all div.input) or each input should be adaptative.
+3. use .mini for smaller version. */
+}<div class="input adaptative">
+            <input required="required" type="text">
+            <label alt="${1:title}" placeholder="${1:title}"></label>
+          </div>
+]]>
+	</content>
+	<tabTrigger>input</tabTrigger>
+	<description>Adaptative input</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content>
+<![CDATA[
+${1:@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+	${7:/* iPhone all styles go here */}
+\}
+}${2:@media only screen and (min-width : 321px) {
+	${8:/* iPhone landscape-only styles go here */}
+\}
+}${3:@media only screen and (max-width : 320px) {
+	${9:/* iPhone portrait-only styles go here */}
+\}
+}${4:@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	${10:/* iPad all styles go here */}
+\}
+}${5:@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	${11:/* iPad landscape-only styles go here */}
+\}
+}${6:@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	${12:/* iPad portrait-only styles go here */}
+\}}
+]]>
+	</content>
+	<tabTrigger>media</tabTrigger>
+	<description>iOS, strict</description>
+</snippet>

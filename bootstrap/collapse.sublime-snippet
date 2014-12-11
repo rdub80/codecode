@@ -1,0 +1,50 @@
+<snippet>
+  <content><![CDATA[
+<div class="panel-group" id="${1:accordion}">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#${1:accordion}" href="#${2:collapseOne}">
+          ${5:[First Panel Title]}
+        </a>
+      </h4>
+    </div><!-- panel-heading -->
+    <div id="${2:collapseOne}" class="panel-collapse collapse in">
+      <div class="panel-body">
+        ${8:[Content]}
+      </div><!-- panel-body -->
+    </div><!-- panel-collapse -->
+  </div><!-- panel -->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#${1:accordion}" href="#${3:collapseTwo}">
+          ${6:[Second Panel Title]}
+        </a>
+      </h4>
+    </div><!-- panel-heading -->
+    <div id="${3:collapseTwo}" class="panel-collapse collapse">
+      <div class="panel-body">
+        ${9:[Content]}
+      </div><!-- panel-body -->
+    </div><!-- panel-collapse -->
+  </div><!-- panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#${1:accordion}" href="#${4:collapseThree}">
+          ${7:[Third Panel Title]}
+        </a>
+      </h4>
+    </div><!-- panel-heading -->
+    <div id="${4:collapseThree}" class="panel-collapse collapse">
+      <div class="panel-body">
+        ${10:[Content]}
+      </div><!-- panel-body -->
+    </div><!-- panel-collapse -->
+  </div><!-- panel -->
+</div><!-- panel-group -->
+]]></content>
+  <tabTrigger>collapse</tabTrigger>
+  <description>Collapse</description>
+</snippet>

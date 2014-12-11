@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+	<![CDATA[
+border: dashed 1px red !important;
+		]]>
+	</content>
+	<tabTrigger>find</tabTrigger>
+	<description>Red, dashed</description>
+</snippet>

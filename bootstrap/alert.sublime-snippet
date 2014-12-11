@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+${5:<!-- other options: alert-info, alert-success, alert-warning, alert-danger -->
+}<div class="alert ${1:alert-success} fade in">
+  ${2:<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>}
+  <h4>${3:[Title]}</h4>
+  ${4:<p>[Content]</p>}
+</div><!-- alert -->
+$TM_FILEPATH
+]]></content>
+  <tabTrigger>alert</tabTrigger>
+  <description>Alert</description>
+</snippet>

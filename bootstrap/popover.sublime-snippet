@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+${5:<!-- to change position, add data-placement= top, bottom, left, right -->
+}<a data-toggle="popover" title="${1:[Popover Title]}" data-content="${2:[Popover content]}" data-placement="${4:top}">${3:[Popover trigger]}</a>
+]]></content>
+  <tabTrigger>popover</tabTrigger>
+  <description>Popover</description>
+</snippet>

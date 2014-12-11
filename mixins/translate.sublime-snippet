@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+<![CDATA[
+${3:/* moves object left, top. negative values ok. */
+}@include translate(${1:10}, ${2:-20});
+]]>
+	</content>
+	<tabTrigger>translate</tabTrigger>
+	<description>Size</description>
+</snippet>

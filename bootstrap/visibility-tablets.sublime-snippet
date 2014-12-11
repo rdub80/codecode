@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+visible-sm
+]]></content>
+  <tabTrigger>visibility</tabTrigger>
+  <description>tablets only (768px to 992px)</description>
+</snippet>

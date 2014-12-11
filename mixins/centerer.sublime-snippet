@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include centerer;
+]]>
+	</content>
+	<tabTrigger>centerer</tabTrigger>
+	<description>Centerer</description>
+</snippet>

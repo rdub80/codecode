@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+<ul id="tab" class="nav nav-tabs">
+  <li class="active"><a href="#${1:tab1}" data-toggle="tab">${4:[Title 1]}</a></li>
+  <li><a href="#${2:tab2}" data-toggle="tab">${5:[Title 2]}</a></li>
+  <li><a href="#${3:tab3}" data-toggle="tab">${6:[Title 3]}</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade in active" id="${1:tab1}">
+    ${7:<p>[Content 1]</p>}
+  </div><!-- tab-pane -->
+  <div class="tab-pane fade" id="${2:tab2}">
+    ${8:<p>[Content 2]</p>}
+  </div><!-- tab-pane -->
+  <div class="tab-pane fade" id="${3:tab3}">
+    ${9:<p>[Content 3]</p>}
+  </div><!-- tab-pane -->
+</div><!-- tab-content -->
+]]></content>
+  <tabTrigger>tabs</tabTrigger>
+  <description>Bootstrap 3 Tabs</description>
+</snippet>

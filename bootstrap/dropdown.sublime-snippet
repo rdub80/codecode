@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+${9:<!-- for divider, use <li class="divider"></li> -->
+}<div class="dropdown"> 
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    ${1:[Trigger]}${2:<i class="glyphicon glyphicon-chevron-down"></i>}
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="${6:#}">${3:[Title Option]}</a></li>
+    <li><a href="${7:#}">${4:{Second Option]}</a></li>
+    <li><a href="${8:#}">${5:[Third Option]}</a></li>
+  </ul>
+</div><!-- dropdown -->
+]]></content>
+  <tabTrigger>dropdown</tabTrigger>
+  <description>Bootstrap 3 Dropdown</description>
+</snippet>

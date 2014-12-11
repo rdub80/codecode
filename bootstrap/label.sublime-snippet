@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+${3:/* label types: 
+label-default (gray)
+label-primary (dark blue)
+label-success (green)
+label-info (light blue)
+label-warning (light orange)
+label-danger (red) */
+}<span class="label label-${2:info}">${1:content}</span>
+]]></content>
+  <tabTrigger>label</tabTrigger>
+  <description>Label</description>
+</snippet>

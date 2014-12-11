@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+<![CDATA[
+${3:/* top-down simple gradient */
+}@include gradient(${1:white}, ${2:black});
+]]>
+	</content>
+	<tabTrigger>gradient</tabTrigger>
+	<description>Gradient</description>
+</snippet>

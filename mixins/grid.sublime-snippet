@@ -1,0 +1,16 @@
+<snippet>
+	<content>
+<![CDATA[
+${3:/* 
+simple same-width grid
+1. to be applied in the parent element
+2. child elements (the columns) should be: li, dt, section or .cell
+first variable is number of columns
+second variable is gutter
+  */
+}@include grid(${1:2}, ${2:30});
+]]>
+	</content>
+	<tabTrigger>grid</tabTrigger>
+	<description>Table Grid</description>
+</snippet>

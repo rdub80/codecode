@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+${3:<!-- Options:
+loading: data-loading-text="Loading..."
+contrast: btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link
+size: .btn-lg, .btn-sm, or .btn-xs 
+action: .active, .disabled
+other: .btn-block, .pull-right, .pull-left -->
+}<a href="#" class="btn ${1:btn-default}">${2:[Content]}</a>
+]]></content>
+  <tabTrigger>btn</tabTrigger>
+  <description>Button</description>
+</snippet>

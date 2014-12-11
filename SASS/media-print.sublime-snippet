@@ -1,0 +1,11 @@
+<snippet>
+	<content>
+<![CDATA[
+@media print {
+ 	${1:/* print-only styles go here */}
+ }
+]]>
+	</content>
+	<tabTrigger>media</tabTrigger>
+	<description>Print</description>
+</snippet>

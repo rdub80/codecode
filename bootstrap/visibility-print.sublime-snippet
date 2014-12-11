@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+visible-print
+]]></content>
+  <tabTrigger>visibility</tabTrigger>
+  <description>only print</description>
+</snippet>

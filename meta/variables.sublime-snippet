@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+$SELECTION
+$TM_CURRENT_LINE
+$TM_CURRENT_WORD
+$TM_FILENAME
+$TM_FILEPATH
+$TM_FULLNAME
+$TM_LINE_INDEX
+$TM_LINE_NUMBER
+$TM_SELECTED_TEXT
+$TM_SOFT_TABS YES
+$TM_TAB_SIZE
+]]></content>
+  <tabTrigger>variable</tabTrigger>
+  <description>Variable</description>
+</snippet>

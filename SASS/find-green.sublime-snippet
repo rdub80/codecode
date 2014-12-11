@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+	<![CDATA[
+border: dotted 1px green !important;
+		]]>
+	</content>
+	<tabTrigger>find</tabTrigger>
+	<description>Green, dotted</description>
+</snippet>

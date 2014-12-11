@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+${6:<!-- to change position, add data-placement= top, bottom, left, right -->
+}<a href="#" data-toggle="tooltip" title="${1:[Tooltip Content]}"${3: data-html="true"}${4: data-placement="${5:top}"}>${2:[Tooltip trigger]}</a>
+]]></content>
+  <tabTrigger>tooltip</tabTrigger>
+  <description>Bootstrap 3 Tooltip</description>
+</snippet>

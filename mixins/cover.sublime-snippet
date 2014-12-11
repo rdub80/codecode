@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include cover;
+]]>
+	</content>
+	<tabTrigger>cover</tabTrigger>
+	<description>Cover</description>
+</snippet>

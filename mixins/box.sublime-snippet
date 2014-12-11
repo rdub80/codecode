@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include box;
+]]>
+	</content>
+	<tabTrigger>box</tabTrigger>
+	<description>Box</description>
+</snippet>

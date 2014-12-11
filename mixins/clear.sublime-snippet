@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include clear;
+]]>
+	</content>
+	<tabTrigger>clear</tabTrigger>
+	<description>Clear</description>
+</snippet>

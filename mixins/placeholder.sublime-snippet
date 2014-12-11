@@ -1,0 +1,12 @@
+<snippet>
+	<content>
+<![CDATA[
+${2:/* add in [placeholder] object only for animation */
+}@include placeholder { 
+${1:content} 
+}
+]]>
+	</content>
+	<tabTrigger>placeholder</tabTrigger>
+	<description>Placeholder Animation</description>
+</snippet>

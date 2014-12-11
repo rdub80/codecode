@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+hidden-md
+]]></content>
+  <tabTrigger>visibility</tabTrigger>
+  <description>all but medium desktops</description>
+</snippet>

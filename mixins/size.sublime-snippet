@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+<![CDATA[
+${2:/* width and height */
+}@include size(${1:10px}, ${2:20px});
+]]>
+	</content>
+	<tabTrigger>size</tabTrigger>
+	<description>Size</description>
+</snippet>

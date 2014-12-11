@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include hide-text;
+]]>
+	</content>
+	<tabTrigger>hide-text</tabTrigger>
+	<description>Hide Text</description>
+</snippet>

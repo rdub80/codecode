@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include shadow(${2:0}px ${3:1}px ${4:2}px rgba(${5:0}, ${6:0}, ${7:0}, ${8:.4})${1:, text});
+]]>
+	</content>
+	<tabTrigger>shadow</tabTrigger>
+	<description>Shadow</description>
+</snippet>

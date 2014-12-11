@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[
+@include square(${1:10px});
+]]>
+	</content>
+	<tabTrigger>square</tabTrigger>
+	<description>Square</description>
+</snippet>
