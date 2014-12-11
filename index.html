@@ -23,6 +23,14 @@
   <meta name="application-name" content="Code/Code"/> 
   <meta name="msapplication-TileColor" content="#df6f0f"/> 
   <meta name="msapplication-TileImage" content="assets/icons/ms-TileImage.png"/>
+  <style>
+  a.label {
+    display: block;
+    }
+    .tooltip .code {
+      background-color: rgba(225,225,0,.4);
+    }
+    </style>
 </head>
 <body>
   <header class="main">
@@ -39,49 +47,25 @@
     <div class="row">
       <div class="col-md-3">
         <h2>Bootstrap 3 snippets</h2>
-        <p><span class="hide-touch">Hover</span><span class="show-touch">Click</span> for options.</p>
+        <p>Click to view official bootstrap page.</p>
         <ul class="snippets">
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">alert</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">badge</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="button and button group" class="label">button</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">collapse</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">dropdown</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">grid</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">label</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="modal window and trigger" class="label">modal</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">popover</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">tabs</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="xxx" class="label">tooltip</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="lgdesktops, mddesktops, notlgdesktops, notphones, notprint, nottablets, phones, print, tablets" class="label">visibility</li>
+<li><a href="http://getbootstrap.com/components/#alerts" target="boots" class="label">alert</a></li>
+<li><a href="http://getbootstrap.com/components/#badges" target="boots" class="label">badge</a></li>
+<li><a href="http://getbootstrap.com/css/#buttons" target="boots" class="label">button</a></li>
+<li><a href="http://getbootstrap.com/javascript/#collapse" target="boots" class="label">collapse</a></li>
+<li><a href="http://getbootstrap.com/javascript/#dropdowns" target="boots" class="label">dropdown</a></li>
+<li><a href="http://getbootstrap.com/css/#grid" target="boots" class="label">grid</a></li>
+<li><a href="http://getbootstrap.com/components/#labels" target="boots" class="label">label</a></li>
+<li><a href="http://getbootstrap.com/javascript/#modals" target="boots" class="label">modal</a></li>
+<li><a href="http://getbootstrap.com/javascript/#popovers" target="boots" class="label">popover</a></li>
+<li><a href="http://getbootstrap.com/javascript/#tabs" target="boots" class="label">tabs</a></li>
+<li><a href="http://getbootstrap.com/javascript/#tooltips" target="boots" class="label">tooltip</a></li>
+<li><a href="http://getbootstrap.com/css/#responsive-utilities" target="boots" class="label">visibility</a></li>
 </ul>
 </div>
 <div class="col-md-3">
   <h2>SASS snippets</h2>
-  <p>SASS-only snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for options.</p>
+  <p>SASS-only snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
   <ul class="snippets">
  <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
@@ -99,7 +83,7 @@
 </div>
 <div class="col-md-3">
   <h2>Mixins snippets</h2>
-  <p>In order to use these snippets, add  <span class="code">mixins</span> up somewhere on your SASS tree. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for options.</p>
+  <p>In order to use these snippets, add  <span class="code">mixins</span> up somewhere on your SASS tree. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
   <ul class="snippets">
 <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
@@ -180,7 +164,7 @@
 </div>
 <div class="col-md-3">
   <h2>Meta snippets</h2>
-  <p>Snippets to create snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for options.</p>
+  <p>Snippets to create snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
   <ul class="snippets">
 <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
@@ -210,10 +194,12 @@
           </a>
         </h2>
         <div id="sublime2" class="collapse in">
-
+          <h3>Mac</h3>
+<p>Copy code below and paste it in the terminal.</p>
           <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/</p>
           <p class="code">git clone https://github.com/nonlinear/codecode.git</p>
-          
+          <h3>Windows</h3>
+          <p class="code">Pending</p>
         </div>
       </div>
       <div>
@@ -223,12 +209,13 @@
             Sublime Text 3
           </a>
         </h2>
-        
         <div id="sublime3" class="collapse">
-
+           <h3>Mac</h3>
+<p>Copy code below and paste it in the terminal.</p>
           <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/</p>
           <p class="code">git clone https://github.com/nonlinear/codecode.git</p>
-          
+           <h3>Windows</h3>
+          <p class="code">Pending</p>
         </div>
       </div>
       <div>
