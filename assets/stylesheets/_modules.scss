@@ -1,0 +1,256 @@
+h2 {
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  padding: $gap-1 0;
+}
+body {
+  margin-top: 100px;
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
+  background-color: #d6d6d6;
+  color: #333;
+}
+a:not(.btn) {
+  @extend %reset-link;
+}
+ul {
+ list-style-type: disc;
+}
+ol {
+ list-style-type: decimal;
+ margin-left: 20px;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: normal;
+}
+.code {
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  padding: 3px;
+  margin-bottom: 0px;
+  border: none;
+  @include radius(0px);
+  word-break: keep-all !important;
+  @include transition;
+  background-color: lighten(yellow, 40%);
+  &:hover {
+    background-color: lighten(yellow, 20%);
+  }
+}
+em {
+  font-style:  italic;
+}
+.snippets {
+  & > li {
+    margin-bottom: 5px;
+    display: inline-block;
+    @include transition;
+  }
+
+}
+.tooltip {
+  width: 300px;
+  &.left .tooltip-inner {
+    @include translate(90, 0); 
+  }
+  .tooltip-inner {
+    text-align: left;
+    padding: $gap-1 15px;
+    font-size: 12px;
+    ul {
+      padding-top: $gap-1 !important;
+    }
+    li {
+      border-top: solid 1px #ccc;
+      padding: 3px 0px;
+    }
+  }      
+}
+h1, h2, h3, .btn, .label, header.main, footer.footer {
+  font-family: 'dense';
+  text-transform: uppercase;
+}
+h1, h2, h3, header.main {
+  color: #333333;
+}
+.btn {
+  font-size: 30px;
+}
+.label {
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  @include radius(0px);
+}
+footer {
+  &.footer {
+    background-color: #333333;
+    color: #eee;
+    padding-bottom: $gap-1;
+    font-size: 20px;
+    .tooltip .tooltip-inner {
+      font-family: Arial, Helvetica;
+      text-transform: none;
+    }
+    a {
+      color: #333;
+      @include radius(50%);
+      padding: 5px;
+      background-color: #666;
+      border: none;
+      i {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      &:first-of-type {
+        margin-left: 5px;
+      }
+      &:hover {
+
+       background-color: #ffcf00;
+       border: none;
+     }
+   }
+   p {
+    margin-top: $gap-1;
+    margin-bottom: 0px;
+    display: inline-block;
+    &.credits {
+      float: right;
+      @media screen and (max-width: 560px) {
+        float: none;
+        display: block;
+        margin-top: 0px;
+        a {
+          float: right;
+          height: 32px;
+          text-align: center;
+          width: 32px;
+          @include translate(0, -15); 
+          i {
+            @include translate(0, -2); 
+          }
+          &:first-of-type {
+            margin-left: 0px;
+
+          }
+        }
+      }
+    }
+  }
+}
+}
+header {
+  &.main {
+    position: fixed;
+    @media screen and (max-width: 767px) {
+      position: relative;
+    }
+    z-index: 1000;
+    padding: 0px !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+    .logo {
+      background-color: #ffcf00;
+      display: inline-block;
+      margin: none !important;
+      padding: 0px 25px;
+      height: 100px;
+      @extend %border-box;
+      font-size: 75px;
+      span {
+        color: white;
+      }
+      @media screen and (max-width: 767px) {
+       width: 100%;
+       text-align: center;
+     }
+   }
+   .description {
+    color: #ccc;
+    display: inline-block;
+    line-height: 30px;
+    padding: 20px;
+    font-size: 30px;
+    vertical-align: top;
+    @media screen and (max-width: 991px) {
+     border: solid 1px blue !important;
+     display: none;
+
+   }
+ }
+ .actions {
+  padding-top: 20px;
+  float: right;
+  @media screen and (max-width: 991px) {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: $gap-1;
+
+
+  }
+  @media screen and (max-width: 767px) {
+   margin-left: 0px;
+   margin-bottom: $gap-1;
+   padding-top: $gap-1;
+   width: 100%;
+   .btn {
+     display: block;
+     width: 100%;
+   }
+ }
+ .btn {
+  padding: $gap-1 20px;
+  @include radius(2px);
+  background-color: #ffcf00;
+  color: #333;
+  border: none;
+  @include transition;
+  &:hover {
+    @include translate(0, 2); 
+    background-color: lighten(#ffcf00, 20%);
+  }
+}
+}
+
+
+}
+}
+.hero {
+  h2 {
+    padding-top: 0px;
+    border-top: none;
+    text-align: center;
+  }
+}
+.ribbon {
+  position: fixed; 
+  @media screen and (max-width: 767px) {
+    position: absolute;
+  }
+  top: 0; 
+  right: 0; 
+  width: 130px;
+  height: 130px;
+  border: 0;
+  z-index: 1000;
+  @include transition;
+  &:hover {
+    width: 135px;
+    height: 135px;
+  }
+}
+.label {
+  background-color: darken(#ffcf00, 10%);
+  &:hover {
+    color: black;
+    background-color: #ffcf00;
+  }
+  
+}

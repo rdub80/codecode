@@ -86,4 +86,6 @@ In order to use these snippets, add  **mixins** up somewhere on your SASS tree.
 #Installation
 ## Sublime Text 2
 ```
-cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets 
+cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
+git clone https://github.com/nonlinear/codecode.git
+``` 

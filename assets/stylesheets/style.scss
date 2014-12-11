@@ -1,0 +1,26 @@
+/* base libraries to get started */
+@import 'compass';
+@import 'compass/reset';
+@import 'bootstrap';
+@import 'fontawesome';
+/* all mixins and variables for better code */
+@import 'variables';
+/* css rules that applies to all projects, a collection of best practices */
+@import 'base';
+/* project-specific, design structure, frame */
+@import 'layout';
+/* project specific modules (pagination, forms, tables, etc) */
+@import 'modules';
+/* responsive rules (desktop-first) from ipad landscape to iphone portrait */
+@media screen and (max-width: 1082px) {
+  @import 'devices/ipad-all';
+}
+@media screen and (max-width: 991px) {
+  @import 'devices/ipad-portrait';
+}
+@media screen and (max-width: 767px) {
+  @import 'devices/iphone-all';
+}
+@media screen and (max-width: 560px) {
+ @import 'devices/iphone-portrait';
+}
