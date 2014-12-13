@@ -1,5 +1,14 @@
-html:not(.mac) .OS-mac, 
-html:not(.windows) .OS-windows, 
-html:not(.linux) .OS-linux {
+html:not(.mac) .visible-mac, 
+html:not(.windows) .visible-windows, 
+html:not(.linux) .visible-linux {
 	display: none;
+}
+.in {
+	margin-bottom: 20px;
+		h3 {
+			margin: 5px 0;
+		}	
+		.code {
+			display: block;
+		}
 }

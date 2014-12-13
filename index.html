@@ -173,78 +173,105 @@
         <li>Use <p class="code">tab</p> again for options (if available)</li>
         <li><em>Voilà!</em></li>
       </ol>
-
     </div>
     <div class="col-md-6">
-      <div class="OS-mac">
-        <h2>Install for Mac</h2>
+      <div class="visible-mac" id="mac">
+        <h2>Installation</h2>
         <p>Copy code below and paste it in the terminal.</p>
-        <h3>
-         Sublime Text 2
-       </h3>
-       <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-        <h3>
-         Sublime Text 3
-       </h3>
-       <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-     </div>
-
-<div class="OS-windows">
-        <h2>Install for Windows</h2>
-        <p>Copy code below and paste it in the terminal.</p>
-        <h3>
-         Sublime Text 2
-       </h3>
-       <p class="code">cd %APPDATA%/Sublime\ Text\ 2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-        <h3>
-         Sublime Text 3
-       </h3>
-       <p class="code">cd %APPDATA%/Sublime\ Text\ 3/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-     </div>
-
-     <div class="OS-windows">
-        <h2>Install for Windows</h2>
-        <p>Copy code below and paste it in the terminal.</p>
-        <h3>
-         Sublime Text 2
-       </h3>
-       <p class="code">cd %APPDATA%/Sublime\ Text\ 2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-        <h3>
-         Sublime Text 3
-       </h3>
-       <p class="code">cd %APPDATA%/Sublime\ Text\ 3/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-     </div>
-
-     <div class="OS-linux">
-        <h2>Install for Linux</h2>
-        <p>Copy code below and paste it in the terminal.</p>
-        <h3>
-         Sublime Text 2
-       </h3>
-       <p class="code">cd ~/.config/sublime-text-2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-        <h3>
-         Sublime Text 3
-       </h3>
-       <p class="code">cd ~/.config/sublime-text-2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
-     </div>
-
-   </div>
-   <div class="col-md-3">
-    <h2>More</h2>
-    <form action="//nicholasfrota.us9.list-manage.com/subscribe/post?u=cf667149616fd293afa115f5a&amp;id=43f2305423" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <h3>Subscribe to our mailing list</h3>
-      <p>This is an ongoing project. Be informed of new snippets so you know when to update.</p>
-      <div class="mc-field-group">
-        <input type="email" value="" name="EMAIL" class="required email" placeholder="Your Email" id="mce-EMAIL"><input type="submit" value="OK" name="subscribe" id="mc-embedded-subscribe" class="btn">
+        <h2>
+          <a data-toggle="collapse" href="#mac_2">
+            Sublime Text 2
+          </a>
+        </h2>
+        <div id="mac_2" class="collapse in">
+          <h3>Installation</h3>
+          <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/<br>git clone https://github.com/nonlinear/codecode.git</p>
+          <h3>Update</h3>
+          <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/codecode<br>git pull</p>
+        </div>
+        <h2>
+          <a data-toggle="collapse" href="#mac_3">
+           Sublime Text 3
+         </a>
+       </h2>
+       <div id="mac_3" class="collapse">
+        <h3>Installation</h3>
+        <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>Update</h3>
+        <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/codecode<br>git pull</p>
       </div>
-      <div class="hidden" id="mce-error-hidden"></div>
-      <div class="hidden" id="mce-success-response"></div>
-      <div class="hidden1"><input type="text" name="b_cf667149616fd293afa115f5a_43f2305423" tabindex="-1" value=""></div>
-    </form>
+    </div>
 
-    <h3>Contact Me</h3>
-    <p>Do you have ideas for more snippets? Found a bug? Are you <strong>that</strong> control freak with your code library? Just wanna say thank you? <a href="mailto:info@nicholasfrota.com?subject=Helping out Code/Code">Send me an email</a>.</p>
-  </div>
+    <div class="visible-windows" id="windows">
+        <h2>Installation</h2>
+        <p>Copy code below and paste it in the terminal.</p>
+        <h2>
+          <a data-toggle="collapse" href="#windows_2">
+            Sublime Text 2
+          </a>
+        </h2>
+        <div id="windows_2" class="collapse in">
+          <h3>Installation</h3>
+          <p class="code">cd %APPDATA%/Sublime\ Text\ 2/Packages/<br>git clone https://github.com/nonlinear/codecode.git</p>
+          <h3>Update</h3>
+          <p class="code">cd %APPDATA%/Sublime\ Text\ 2/Packages/codecode<br>git pull</p>
+        </div>
+        <h2>
+          <a data-toggle="collapse" href="#windows_3">
+           Sublime Text 3
+         </a>
+       </h2>
+       <div id="windows_3" class="collapse">
+        <h3>Installation</h3>
+        <p class="code">cd %APPDATA%/Sublime\ Text\ 3/Packages/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>Update</h3>
+        <p class="code">cd %APPDATA%/Sublime\ Text\ 3/Packages/codecode<br>git pull</p>
+      </div>
+    </div>
+   <div class="visible-linux" id="linux">
+        <h2>Installation</h2>
+        <p>Copy code below and paste it in the terminal.</p>
+        <h2>
+          <a data-toggle="collapse" href="#linux_2">
+            Sublime Text 2
+          </a>
+        </h2>
+        <div id="linux_2" class="collapse in">
+          <h3>Installation</h3>
+          <p class="code">cd ~/.config/sublime-text-2/Packages/<br>git clone https://github.com/nonlinear/codecode.git</p>
+          <h3>Update</h3>
+          <p class="code">cd ~/.config/sublime-text-2/Packages/codecode<br>git pull</p>
+        </div>
+        <h2>
+          <a data-toggle="collapse" href="#linux_3">
+           Sublime Text 3
+         </a>
+       </h2>
+       <div id="linux_3" class="collapse">
+        <h3>Installation</h3>
+        <p class="code">cd ~/.config/sublime-text-3/Packages/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>Update</h3>
+        <p class="code">cd ~/.config/sublime-text-3/Packages/codecode<br>git pull</p>
+      </div>
+    </div>
+
+</div>
+<div class="col-md-3">
+  <h2>More</h2>
+  <form action="//nicholasfrota.us9.list-manage.com/subscribe/post?u=cf667149616fd293afa115f5a&amp;id=43f2305423" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h3>Subscribe to our mailing list</h3>
+    <p>This is an ongoing project. Be informed of new snippets so you know when to update.</p>
+    <div class="mc-field-group">
+      <input type="email" value="" name="EMAIL" class="required email" placeholder="Your Email" id="mce-EMAIL"><input type="submit" value="OK" name="subscribe" id="mc-embedded-subscribe" class="btn">
+    </div>
+    <div class="hidden" id="mce-error-hidden"></div>
+    <div class="hidden" id="mce-success-response"></div>
+    <div class="hidden1"><input type="text" name="b_cf667149616fd293afa115f5a_43f2305423" tabindex="-1" value=""></div>
+  </form>
+
+  <h3>Contact Me</h3>
+  <p>Do you have ideas for more snippets? Found a bug? Are you <strong>that</strong> control freak with your code library? Just wanna say thank you? <a href="mailto:info@nicholasfrota.com?subject=Helping out Code/Code">Send me an email</a>.</p>
+</div>
 </div>
 </div> 
 <footer class="footer">
