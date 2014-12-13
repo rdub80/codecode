@@ -23,56 +23,6 @@
   <meta name="application-name" content="Code/Code"/> 
   <meta name="msapplication-TileColor" content="#df6f0f"/> 
   <meta name="msapplication-TileImage" content="assets/icons/ms-TileImage.png"/>
-  <style>
-  a.label {
-    display: block;
-    }
-    .tooltip .code {
-      background-color: rgba(225,225,0,.4);
-    }
-    .hidden1 {
-      position: absolute; 
-      left: -5000px;
-    }
-    .hidden {
-displaY: none;
-    }
-    form {
-      vertical-align: top;
-    }
-    form input[type="email"] {
-      padding: 18px 15px;
-      width: 200px;
-        -webkit-border-top-right-radius:    0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius:  5px;
-  -webkit-border-top-left-radius:     5px;
-  -moz-border-radius-topright:        0;
-  -moz-border-radius-bottomright:     0;
-  -moz-border-radius-bottomleft:      5px;
-  -moz-border-radius-topleft:         5px;
-  border-top-right-radius:            0;
-  border-bottom-right-radius:         0;
-  border-bottom-left-radius:          5px;
-  border-top-left-radius:             5px;
-  border: none;
-    }
-    form .btn {
-      width: 60px;
-              -webkit-border-top-right-radius:    5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius:  0;
-  -webkit-border-top-left-radius:     0;
-  -moz-border-radius-topright:        5px;
-  -moz-border-radius-bottomright:     5px;
-  -moz-border-radius-bottomleft:      0;
-  -moz-border-radius-topleft:         0;
-  border-top-right-radius:            5px;
-  border-bottom-right-radius:         5px;
-  border-bottom-left-radius:          0;
-  border-top-left-radius:             0;
-    }
-    </style>
 </head>
 <body>
   <header class="main">
@@ -91,203 +41,206 @@ displaY: none;
         <h2>Bootstrap 3 snippets</h2>
         <p>Click to view official bootstrap page.</p>
         <ul class="snippets">
-<li><a href="http://getbootstrap.com/components/#alerts" target="boots" class="label">alert</a></li>
-<li><a href="http://getbootstrap.com/components/#badges" target="boots" class="label">badge</a></li>
-<li><a href="http://getbootstrap.com/css/#buttons" target="boots" class="label">button</a></li>
-<li><a href="http://getbootstrap.com/javascript/#collapse" target="boots" class="label">collapse</a></li>
-<li><a href="http://getbootstrap.com/javascript/#dropdowns" target="boots" class="label">dropdown</a></li>
-<li><a href="http://getbootstrap.com/css/#grid" target="boots" class="label">grid</a></li>
-<li><a href="http://getbootstrap.com/components/#labels" target="boots" class="label">label</a></li>
-<li><a href="http://getbootstrap.com/javascript/#modals" target="boots" class="label">modal</a></li>
-<li><a href="http://getbootstrap.com/javascript/#popovers" target="boots" class="label">popover</a></li>
-<li><a href="http://getbootstrap.com/javascript/#tabs" target="boots" class="label">tabs</a></li>
-<li><a href="http://getbootstrap.com/javascript/#tooltips" target="boots" class="label">tooltip</a></li>
-<li><a href="http://getbootstrap.com/css/#responsive-utilities" target="boots" class="label">visibility</a></li>
-</ul>
-</div>
-<div class="col-md-3">
-  <h2>SASS snippets</h2>
-  <p>SASS-only snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
-  <ul class="snippets">
- <li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="quick and dirty way to point to objects when testing: solid blue, dotted green, dashed red" class="label">find</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="if/else" class="label">if</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="useful media queries: bootstrap, bootstrap+ios, device, orient, print" class="label">media</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="useful mixins (list below)" class="label">mixins</li>
-</ul>
-</div>
-<div class="col-md-3">
-  <h2>Mixins snippets</h2>
-  <p>In order to use these snippets, add  <span class="code">mixins</span> up somewhere on your SASS tree. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
-  <ul class="snippets">
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="animation rules (fade, zoom, blur, etc.)" class="label">animate</li> 
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="border-box" class="label">box</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="center object verticallly and horizontally" class="label">centerer</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="clearfix" class="label">clear</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="background cover (spans all object)" class="label">cover</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="a hack to object to major iOS sizes. variable is px you detract from it." class="label">devicewidth</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="hides text with ..." class="label">ellipsis</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="filter effects" class="label">filter</li> 
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="simple gradient" class="label">gradient</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="quick grid: define number of cells, gutter (defaults to 20px) and make sure columns have class <span class='code'>.cell</span>" class="label">grid</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="hides object text" class="label">hide-text</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="transparency" class="label">opacity</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="rules for input placeholders" class="label">placeholder</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="add radius to objects: uniform or custom" class="label">radius</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="cheesy reflect effect" class="label">reflect</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="reset object" class="label">reset</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="rotate object" class="label">rotate</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="scale object" class="label">scale</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="adds shadow if there's more to scroll. variable is bg color" class="label">scroll-hint</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="text and box shadow" class="label">shadow</li> 
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="a quick resizer, width|height" class="label">size</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="skew object" class="label">skew</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="for square sizes" class="label">square</li>
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="transition for animation" class="label">transition</li> 
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="forces word-wrap" class="label">word-wrap</li>
-</ul>
-</div>
-<div class="col-md-3">
-  <h2>Meta snippets</h2>
-  <p>Snippets to create snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
-  <ul class="snippets">
-<li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="create snippets" class="label">snippet</li>
-</ul>
-</div>
-</div>
-<div class="row">
-  <div class="col-md-3">
-    <h2>Usage</h2>
-    <ol>
-      <li>Type any of the triggers above in Sublime Text</li>
-      <li>Hit <p class="code">tab</p></li>
-      <li>Use <p class="code">tab</p> again for options (if available)</li>
-      <li><em>Voilà!</em></li>
-    </ol>
-
-  </div>
-  <div class="col-md-6">
-    <h2>Installation</h2>
-    <div class="panel-group" id="installation">
-      <div>
-
-        <h2>
-          <a data-toggle="collapse" data-parent="#installation" href="#sublime2">
-            Sublime Text 2
-          </a>
-        </h2>
-        <div id="sublime2" class="collapse in">
-          <h3>Mac</h3>
-<p>Copy code below and paste it in the terminal.</p>
-          <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/</p>
-          <p class="code">git clone https://github.com/nonlinear/codecode.git</p>
-          <h3>Windows</h3>
-          <p class="code">Pending</p>
-        </div>
+          <li><a href="http://getbootstrap.com/components/#alerts" target="boots" class="label">alert</a></li>
+          <li><a href="http://getbootstrap.com/components/#badges" target="boots" class="label">badge</a></li>
+          <li><a href="http://getbootstrap.com/css/#buttons" target="boots" class="label">button</a></li>
+          <li><a href="http://getbootstrap.com/javascript/#collapse" target="boots" class="label">collapse</a></li>
+          <li><a href="http://getbootstrap.com/javascript/#dropdowns" target="boots" class="label">dropdown</a></li>
+          <li><a href="http://getbootstrap.com/css/#grid" target="boots" class="label">grid</a></li>
+          <li><a href="http://getbootstrap.com/components/#labels" target="boots" class="label">label</a></li>
+          <li><a href="http://getbootstrap.com/javascript/#modals" target="boots" class="label">modal</a></li>
+          <li><a href="http://getbootstrap.com/javascript/#popovers" target="boots" class="label">popover</a></li>
+          <li><a href="http://getbootstrap.com/javascript/#tabs" target="boots" class="label">tabs</a></li>
+          <li><a href="http://getbootstrap.com/javascript/#tooltips" target="boots" class="label">tooltip</a></li>
+          <li><a href="http://getbootstrap.com/css/#responsive-utilities" target="boots" class="label">visibility</a></li>
+        </ul>
       </div>
-      <div>
-
-        <h2>
-          <a data-toggle="collapse" data-parent="#installation" href="#sublime3">
-            Sublime Text 3
-          </a>
-        </h2>
-        <div id="sublime3" class="collapse">
-           <h3>Mac</h3>
-<p>Copy code below and paste it in the terminal.</p>
-          <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/</p>
-          <p class="code">git clone https://github.com/nonlinear/codecode.git</p>
-           <h3>Windows</h3>
-          <p class="code">Pending</p>
-        </div>
-      </div>
-      <div>
-
-        <h2>
-          <a data-toggle="collapse" data-parent="#installation" href="#atom">
-            Atom
-          </a>
-        </h2>
-        
-        <div id="atom" class="collapse">
-
-          <p class="code">Pending</p>
-          
-        </div>
-      </div>
+      <div class="col-md-3">
+        <h2>SASS snippets</h2>
+        <p>SASS-only snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
+        <ul class="snippets">
+         <li data-toggle="tooltip" 
+         data-html="true" data-placement="bottom" 
+         title="quick and dirty way to point to objects when testing: solid blue, dotted green, dashed red" class="label">find</li>
+         <li data-toggle="tooltip" 
+         data-html="true" data-placement="bottom" 
+         title="if/else" class="label">if</li>
+         <li data-toggle="tooltip" 
+         data-html="true" data-placement="bottom" 
+         title="useful media queries: bootstrap, bootstrap+ios, device, orient, print" class="label">media</li>
+         <li data-toggle="tooltip" 
+         data-html="true" data-placement="bottom" 
+         title="useful mixins (list below)" class="label">mixins</li>
+       </ul>
+     </div>
+     <div class="col-md-3">
+      <h2>Mixins snippets</h2>
+      <p>In order to use these snippets, add  <span class="code">mixins</span> up somewhere on your SASS tree. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
+      <ul class="snippets">
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="animation rules (fade, zoom, blur, etc.)" class="label">animate</li> 
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="border-box" class="label">box</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="center object verticallly and horizontally" class="label">centerer</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="clearfix" class="label">clear</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="background cover (spans all object)" class="label">cover</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="a hack to object to major iOS sizes. variable is px you detract from it." class="label">devicewidth</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="hides text with ..." class="label">ellipsis</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="filter effects" class="label">filter</li> 
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="simple gradient" class="label">gradient</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="quick grid: define number of cells, gutter (defaults to 20px) and make sure columns have class <span class='code'>.cell</span>" class="label">grid</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="hides object text" class="label">hide-text</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="transparency" class="label">opacity</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="rules for input placeholders" class="label">placeholder</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="add radius to objects: uniform or custom" class="label">radius</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="cheesy reflect effect" class="label">reflect</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="reset object" class="label">reset</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="rotate object" class="label">rotate</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="scale object" class="label">scale</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="adds shadow if there's more to scroll. variable is bg color" class="label">scroll-hint</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="text and box shadow" class="label">shadow</li> 
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="a quick resizer, width|height" class="label">size</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="skew object" class="label">skew</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="for square sizes" class="label">square</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="transition for animation" class="label">transition</li> 
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="forces word-wrap" class="label">word-wrap</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h2>Meta snippets</h2>
+      <p>Snippets to create snippets. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
+      <ul class="snippets">
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="create snippets" class="label">snippet</li>
+      </ul>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>Usage</h2>
+      <ol>
+        <li>Type any of the triggers above in Sublime Text</li>
+        <li>Hit <p class="code">tab</p></li>
+        <li>Use <p class="code">tab</p> again for options (if available)</li>
+        <li><em>Voilà!</em></li>
+      </ol>
+
+    </div>
+    <div class="col-md-6">
+      <div class="OS-mac">
+        <h2>Install for Mac</h2>
+        <p>Copy code below and paste it in the terminal.</p>
+        <h3>
+         Sublime Text 2
+       </h3>
+       <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>
+         Sublime Text 3
+       </h3>
+       <p class="code">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+     </div>
+
+<div class="OS-windows">
+        <h2>Install for Windows</h2>
+        <p>Copy code below and paste it in the terminal.</p>
+        <h3>
+         Sublime Text 2
+       </h3>
+       <p class="code">cd %APPDATA%/Sublime\ Text\ 2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>
+         Sublime Text 3
+       </h3>
+       <p class="code">cd %APPDATA%/Sublime\ Text\ 3/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+     </div>
+
+     <div class="OS-windows">
+        <h2>Install for Windows</h2>
+        <p>Copy code below and paste it in the terminal.</p>
+        <h3>
+         Sublime Text 2
+       </h3>
+       <p class="code">cd %APPDATA%/Sublime\ Text\ 2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>
+         Sublime Text 3
+       </h3>
+       <p class="code">cd %APPDATA%/Sublime\ Text\ 3/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+     </div>
+
+     <div class="OS-linux">
+        <h2>Install for Linux</h2>
+        <p>Copy code below and paste it in the terminal.</p>
+        <h3>
+         Sublime Text 2
+       </h3>
+       <p class="code">cd ~/.config/sublime-text-2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+        <h3>
+         Sublime Text 3
+       </h3>
+       <p class="code">cd ~/.config/sublime-text-2/Packages/User/<br>git clone https://github.com/nonlinear/codecode.git</p>
+     </div>
+
+   </div>
+   <div class="col-md-3">
     <h2>More</h2>
-<form action="//nicholasfrota.us9.list-manage.com/subscribe/post?u=cf667149616fd293afa115f5a&amp;id=43f2305423" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <h3>Subscribe to our mailing list</h3>
-  <p>This is an ongoing project. Be informed of new snippets so you know when to update.</p>
-<div class="mc-field-group">
-  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your Email" id="mce-EMAIL"><input type="submit" value="OK" name="subscribe" id="mc-embedded-subscribe" class="btn">
-</div>
-    <div class="hidden" id="mce-error-hidden"></div>
-    <div class="hidden" id="mce-success-response"></div>
-    <div class="hidden1"><input type="text" name="b_cf667149616fd293afa115f5a_43f2305423" tabindex="-1" value=""></div>
-</form>
+    <form action="//nicholasfrota.us9.list-manage.com/subscribe/post?u=cf667149616fd293afa115f5a&amp;id=43f2305423" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <h3>Subscribe to our mailing list</h3>
+      <p>This is an ongoing project. Be informed of new snippets so you know when to update.</p>
+      <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" placeholder="Your Email" id="mce-EMAIL"><input type="submit" value="OK" name="subscribe" id="mc-embedded-subscribe" class="btn">
+      </div>
+      <div class="hidden" id="mce-error-hidden"></div>
+      <div class="hidden" id="mce-success-response"></div>
+      <div class="hidden1"><input type="text" name="b_cf667149616fd293afa115f5a_43f2305423" tabindex="-1" value=""></div>
+    </form>
 
     <h3>Contact Me</h3>
     <p>Do you have ideas for more snippets? Found a bug? Are you <strong>that</strong> control freak with your code library? Just wanna say thank you? <a href="mailto:info@nicholasfrota.com?subject=Helping out Code/Code">Send me an email</a>.</p>
@@ -304,15 +257,16 @@ displaY: none;
   </div>
 </footer>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-57576127-1', 'auto');
-  ga('send', 'pageview');
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-57576127-1', 'auto');
+ga('send', 'pageview');
 </script>
 <script src="assets/javascript/jquery-1.10.2.min.js"></script>
 <script src="assets/javascript/modernizr.js"></script>
+<script src="assets/javascript/detectizr.js"></script>
 <script src="assets/javascript/scripts.js"></script>
 </body>
 </html>

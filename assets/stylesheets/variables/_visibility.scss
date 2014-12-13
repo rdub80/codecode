@@ -1,0 +1,5 @@
+html:not(.mac) .OS-mac, 
+html:not(.windows) .OS-windows, 
+html:not(.linux) .OS-linux {
+	display: none;
+}
