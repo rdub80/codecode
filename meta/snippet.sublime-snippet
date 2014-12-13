@@ -5,11 +5,11 @@
   <content>
 <![CDATA[
 ${3:content}
-]\]>
-  <\/content>
-  <\tabTrigger>${1:trigger}<\/tabTrigger>
-  <\description>${2:description}<\/description>
-<\/snippet>
+${4:]]}>
+  </content>
+  <tabTrigger>${1:trigger}</tabTrigger>
+  <description>${2:description}</description>
+</snippet>
 ]]>
   </content>
   <tabTrigger>snippet</tabTrigger>
