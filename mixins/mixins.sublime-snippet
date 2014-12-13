@@ -72,7 +72,7 @@
   -khtml-opacity: \$opacity / 100;
   -moz-opacity:   \$opacity / 100;
 }
-@mixin transition(\$prop: all, \$time: 300ms, \$ease: ease-out) {
+@mixin trans(\$prop: all, \$time: 300ms, \$ease: ease-out) {
   -webkit-transition:  \$prop \$time \$ease;
   -moz-transition:     \$prop \$time \$ease;
   -ms-transition:      \$prop \$time \$ease;
