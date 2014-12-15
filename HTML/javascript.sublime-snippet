@@ -2,13 +2,13 @@
   <content>
 <![CDATA[
 ${1:${5:<!-- jquery master -->
-}<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></content>
+}<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
 }${2:${6:<!-- bootstrap js. WARNING: it needs the CSS version too -->
-}<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></content>
+}<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 }${3:${7:<!-- copy for modernizr -->
-}<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></content>
+}<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 }${4:${8:<!-- copy for detectizr -->
-}<script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.js"></content>}
+}<script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.js"></script>}
 ]]>
   </content>
   <tabTrigger>javascript</tabTrigger>
