@@ -365,6 +365,16 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
     filter: blur(10px);
   }
 }
+@mixin only(\$only: mac) {
+      html.#{\$only} & {
+        @content
+      }
+}
+@mixin except(\$except: mac) {
+      html:not(.#{\$exception}) & {
+        @content
+      }
+}
 ]]>
 	</content>
 	<tabTrigger>mixins</tabTrigger>

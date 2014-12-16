@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+<![CDATA[
+${2:/*
+REQUIRES modernizr and Detectizr.
+System options are: mac, win, linux, android
+Browser options are: firefox, safari, ie (ie9, ie8, etc), chrome, opera
+*/
+}@include only(${1:mac}) {
+	$3
+}
+]]>
+  </content>
+  <tabTrigger>only</tabTrigger>
+  <description>Exclusive rules for browsers and OSes</description>
+</snippet>

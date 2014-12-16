@@ -49,3 +49,34 @@
     border-top-left-radius:             0;
   }
   }
+.system:before {
+  @include only(mac) {
+    content: "mac";
+  }
+  @include only(windows) {
+    content: "windows";
+  }
+  @include only(android) {
+    content: "android";
+  }
+  @include only(linux) {
+    content: "linux";
+  }
+}
+.browser:before {
+  @include only(safari) {
+    content: "safari";
+  }
+  @include only(firefox) {
+    content: "firefox";
+  }
+  @include only(chrome) {
+    content: "chrome";
+  }
+  @include only(ie) {
+    content: "ie";
+  }
+}
+hr {
+  margin: 5px 0;
+}
