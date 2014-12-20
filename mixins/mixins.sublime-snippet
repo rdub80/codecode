@@ -365,12 +365,12 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
     filter: blur(10px);
   }
 }
-@mixin only(\$only: mac) {
+@mixin but(\$only: mac) {
       html.#{\$only} & {
         @content
       }
 }
-@mixin except(\$except: mac) {
+@mixin allbut(\$except: mac) {
       html:not(.#{\$exception}) & {
         @content
       }
