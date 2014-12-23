@@ -7,8 +7,8 @@ ${1:${5:<!-- jquery master -->
 }<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 }${3:${7:<!-- copy for modernizr -->
 }<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-}${4:${8:<!-- copy for detectizr -->
-}<script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.js"></script>}
+}${4:${8:<!-- CDN doesn't work with detectizr -->
+}<script src="/assets/javascript/detectizr.js"></script>}
 ]]>
   </content>
   <tabTrigger>js</tabTrigger>
