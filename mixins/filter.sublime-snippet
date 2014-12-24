@@ -8,6 +8,6 @@
     }@include filter(${1:blur}, ${2:10px});
     ]]>
   </content>
-  <tabTrigger>reset</tabTrigger>
-  <description>Reset</description>
+  <tabTrigger>filter</tabTrigger>
+  <description>Filter</description>
 </snippet>
