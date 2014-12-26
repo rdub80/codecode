@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-<i class="glyphicon glyphicon-${1:ok}"></i>
-]]></content>
-  <tabTrigger>icon</tabTrigger>
-    <description>Glyphicon icon</description>
-</snippet>
