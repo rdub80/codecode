@@ -1,16 +1,21 @@
 <snippet>
   <content>
 <![CDATA[
-${1:${5:<!-- jquery master -->
-}<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
-}${2:${6:<!-- bootstrap js. WARNING: it needs the CSS version too -->
-}<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-}${3:${7:<!-- copy for modernizr -->
+${1:${6:<!-- jquery master, CDN and local fallback -->
+}<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="/assets/javascript/jquery.js"%3E%3C/script%3E'))</script>
+}${2:${7:<!-- bootstrap javascript library, CDN and local fallback -->
+}<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="/assets/javascript/bootstrap.js"%3E%3C/script%3E'))</script>
+}${3:${8:<!-- modernizr javascript library, CDN and local fallback -->
 }<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-}${4:${8:<!-- CDN doesn't work with detectizr -->
-}<script src="/assets/javascript/detectizr.js"></script>}
+<script>!window.jQuery && document.write(unescape('%3Cscript src="/assets/javascript/modernizr.js"%3E%3C/script%3E'))</script>
+}${4:${9:<!-- Detectizr javascript library, local only -->
+}<script src="/assets/javascript/detectizr.js"></script>
+}${5:${10:<!-- SmoothState javascript library, local only -->
+}<script src="/assets/javascript/smoothstate.js"></script>}
 ]]>
   </content>
   <tabTrigger>js</tabTrigger>
-  <description>CDN Javascript Libraries</description>
+  <description>Javascript Libraries, CDN and local fallback</description>
 </snippet>

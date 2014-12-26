@@ -1,8 +1,9 @@
 <snippet>
   <content>
 <![CDATA[
-/*!
- * jQuery JavaScript Library v2.1.1
+/*!$
+{2: * Save as ${1:jquery.js} on assets/javascript/
+} * jQuery JavaScript Library v2.1.1
  * http://jquery.com/
  *
  * Includes Sizzle.js
