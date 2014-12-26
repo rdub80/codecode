@@ -508,5 +508,5 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 ]]>
   </content>
   <tabTrigger>detectizr</tabTrigger>
-  <description>Detectizr</description>
+  <description>Detectizr javascript library</description>
 </snippet>
