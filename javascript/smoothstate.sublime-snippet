@@ -2,7 +2,7 @@
   <content>
 <![CDATA[
 /**
-{2: * Save as ${1:smoothstate.js} on assets/javascript/
+${2: * Save as ${1:smoothstate.js} on assets/javascript/
 } * smoothState.js is a jQuery plugin to stop page load jank.
  *
  * This jQuery plugin progressively enhances page loads to 

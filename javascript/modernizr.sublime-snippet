@@ -2,7 +2,7 @@
   <content>
 <![CDATA[
 /*!
-{2: * Save as ${1:modernizr.js} on assets/javascript/
+${2: * Save as ${1:modernizr.js} on assets/javascript/
 } * Modernizr v2.8.3
  * www.modernizr.com
  *
