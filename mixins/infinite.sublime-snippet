@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+    <![CDATA[
+    ${2:<!-- Makes animation infinite -->
+    }@include infinite;
+    ]]>
+  </content>
+  <tabTrigger>infinite</tabTrigger>
+  <description>Infinite Animation</description>
+</snippet>

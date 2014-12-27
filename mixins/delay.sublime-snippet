@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+    <![CDATA[
+    ${2:<!-- Adds delay to animate mixin, 75ms per step -->
+    }@include animate(${1:1});
+    ]]>
+  </content>
+  <tabTrigger>delay</tabTrigger>
+  <description>Delay Animation</description>
+</snippet>

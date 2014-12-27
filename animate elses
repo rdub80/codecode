@@ -1,0 +1,99 @@
+// assign animation to object:
+// @include animate(animationtitle, duration);
+// optionally, add delay, infinite
+// @include delay(2);
+// @include infinite;
+
+@mixin animate($title: fade, $duration: 500ms, $timing: ease-in) {
+	-webkit-animation: $title $duration $timing;
+	animation:         $title $duration $timing;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	@if $title == bounce {
+		-webkit-transform-origin: center bottom;
+		-ms-transform-origin: center bottom;
+		transform-origin: center bottom;
+	} 
+	@else if $title == bounceIn {
+		-webkit-animation-duration: .75s;
+		animation-duration: .75s;
+	} 
+	@else if $title == bounceOut {
+		-webkit-animation-duration: .75s;
+		animation-duration: .75s;
+	} 
+	@else if $title == flip {
+		-webkit-backface-visibility: visible;
+		backface-visibility: visible;
+	} 
+	@else if $title == flipInX {
+		-webkit-backface-visibility: visible !important;
+		backface-visibility: visible !important;
+	} 
+	@else if $title == flipInY {
+		-webkit-backface-visibility: visible !important;
+		backface-visibility: visible !important;
+	} 
+	@else if $title == flipOutX {
+			-webkit-animation-duration: .75s;
+	animation-duration: .75s;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	} 
+	@else if $title == flipOutY {
+			-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	-webkit-animation-duration: .75s;
+	animation-duration: .75s;
+	} 
+	@else if $title == option2 {
+		condition2
+	} 
+	@else if $title == option2 {
+		condition2
+	} 
+	@else if $title == option2 {
+		condition2
+	} 
+	@else if $title == option2 {
+		condition2
+	} 
+	@else if $title == option2 {
+		condition2
+	} 
+}
+
+
+
+
+
+. {
+	-webkit-animation-name: flipOutX;
+	animation-name: flipOutX;
+}
+
+. {
+
+}
+.swing {
+	-webkit-transform-origin: top center;
+	-ms-transform-origin: top center;
+	transform-origin: top center;
+	-webkit-animation-name: swing;
+	animation-name: swing;
+}
+
+.lightSpeedIn {
+	-webkit-animation-name: lightSpeedIn;
+	animation-name: lightSpeedIn;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+}
+
+.lightSpeedOut {
+	-webkit-animation-name: lightSpeedOut;
+	animation-name: lightSpeedOut;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+}
+
