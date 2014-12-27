@@ -354,6 +354,10 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+@mixin reverse {
+      -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse; 
+}
 
 /* basic animations */
 

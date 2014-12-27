@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+    <![CDATA[
+    ${2:<!-- Reverses animation  -->
+    }@include reverse;
+    ]]>
+  </content>
+  <tabTrigger>reverse</tabTrigger>
+  <description>Reverses Animation</description>
+</snippet>
