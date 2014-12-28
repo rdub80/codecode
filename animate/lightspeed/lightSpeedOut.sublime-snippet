@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:/* OPTIONS: variables are (in order): duration, count, delay, function,  fill */
+}@include lightSpeedOut;
+]]>
+  </content>
+  <tabTrigger>lightSpeedOut</tabTrigger>
+  <description>lightSpeedOut animation</description>
+</snippet>

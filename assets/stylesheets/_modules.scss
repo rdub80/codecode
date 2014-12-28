@@ -43,7 +43,7 @@ ol {
 em {
   font-style:  italic;
 }
-.snippets {
+.macros {
   & > li {
     margin-bottom: 5px;
     display: inline-block;
@@ -252,5 +252,11 @@ header {
     color: black;
     background-color: #ffcf00;
   }
+        &.master {
+    background-color: darken(#ffcf00, 20%);
+      &:hover {
+    background-color: darken(#ffcf00, 10%);
+  }
+    }
   
 }

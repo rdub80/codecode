@@ -1,7 +1,7 @@
   a.label {
-    display: block;
+    display: block; 
   }
-  .snippets {
+  .macros {
     padding: 0;
   }
   .tooltip .code {
@@ -85,4 +85,23 @@
  margin-top: 0px;
  padding-top: 0px;
  border-top: none;
+  }
+  .panel {
+  @include radius(0);
+      @include reset(all);
+      @include shadow(none);
+      &:last-of-type {
+        margin-bottom: 10px !important;
+      }
+      h3 {
+      @include reset(all);
+      }
+      a[data-toggle="collapse"] {
+      @include reset(all);
+        padding: 10px 0 5px 0;
+        display: block;
+      }
+     .collapse {
+      @include reset(all);
+     } 
   }

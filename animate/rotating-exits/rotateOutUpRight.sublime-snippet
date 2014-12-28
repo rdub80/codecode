@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:/* OPTIONS: variables are (in order): duration, count, delay, function,  fill */
+}@include rotateOutUpRight;
+]]>
+  </content>
+  <tabTrigger>rotateOutUpRight</tabTrigger>
+  <description>rotateOutUpRight animation</description>
+</snippet>

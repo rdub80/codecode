@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:/* OPTIONS: variables are (in order): duration, count, delay, function,  fill */
+}@include fadeInDown;
+]]>
+  </content>
+  <tabTrigger>fadeInDown</tabTrigger>
+  <description>fadeInDown animation</description>
+</snippet>

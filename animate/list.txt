@@ -1,0 +1,360 @@
+<div id="animations">
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim01"><h3>ATTENTION SEEKERS</h3>
+    </a>
+    <div id="anim01" class="panel-collapse collapse in">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounce</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">flash</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">pulse</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rubberBand</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">shake</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">swing</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">tada</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">wobble</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim02"><h3>BOUNCING ENTRANCES</h3>
+    </a>
+    <div id="anim02" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceIn</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceInDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceInLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceInRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceInUp</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim03"><h3>BOUNCING EXITS</h3>
+    </a>
+    <div id="anim03" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceOut</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceOutDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceOutLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceOutRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">bounceOutUp</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim04"><h3>FADING ENTRANCES</h3>
+    </a>
+    <div id="anim04" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeIn</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInDownBig</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInLeftBig</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInRightBig</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInUp</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeInUpBig</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim05"><h3>FADING EXITS</h3>
+    </a>
+    <div id="anim05" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOut</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutDownBig</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutLeftBig</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutRightBig</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutUp</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">fadeOutUpBig</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim06"><h3>FLIPPERS</h3>
+    </a>
+    <div id="anim06" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">flip</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">flipInX</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">flipInY</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">flipOutX</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">flipOutY</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim07"><h3>LIGHTSPEED ANIMATIONS</h3>
+    </a>
+    <div id="anim07" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">lightSpeedIn</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">lightSpeedOut</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim08"><h3>ROTATING ENTRANCES</h3>
+    </a>
+    <div id="anim08" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateIn</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateInDownLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateInDownRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateInUpLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateInUpRight</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim09"><h3>ROTATING EXITS</h3>
+    </a>
+    <div id="anim09" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateOut</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateOutDownLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateOutDownRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateOutUpLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rotateOutUpRight</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim10"><h3>SLIDING ENTRANCES</h3>
+    </a>
+    <div id="anim10" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideInDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideInLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideInRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideInUp</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim11"><h3>SLIDING EXITS</h3>
+    </a>
+    <div id="anim11" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideOutDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideOutLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideOutRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">slideOutUp</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim12"><h3>SPECIAL ANIMATIONS</h3>
+    </a>
+    <div id="anim12" class="panel-collapse collapse">
+      <ul class="snippets">
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">hinge</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rollIn</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">rollOut</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim13"><h3>ZOOMING ENTRANCES</h3>
+    </a>
+    <div id="anim13" class="panel-collapse collapse">
+      <ul class="snippets">
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomIn</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomInDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomInLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomInRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomInUp</li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <a data-toggle="collapse" data-parent="#animations" href="#anim14"><h3>ZOOMING EXITS</h3>
+    </a>
+    <div id="anim14" class="panel-collapse collapse">
+      <ul class="snippets">
+
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomOut</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomOutDown</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomOutLeft</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomOutRight</li>
+        <li data-toggle="tooltip" 
+        data-html="true" data-placement="bottom" 
+        title="requires animate" class="label">zoomOutUp</li>
+      </ul>
+    </div>
+  </div>
+</div>

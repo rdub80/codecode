@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:/* OPTIONS: variables are (in order): duration, count, delay, function,  fill */
+}@include bounceOut;
+]]>
+  </content>
+  <tabTrigger>bounceOut</tabTrigger>
+  <description>bounceOut animation</description>
+</snippet>

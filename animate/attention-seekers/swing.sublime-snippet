@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:/* OPTIONS: variables are (in order): duration, count, delay, function,  fill */
+}@include swing;
+]]>
+  </content>
+  <tabTrigger>swing</tabTrigger>
+  <description>swing animation</description>
+</snippet>

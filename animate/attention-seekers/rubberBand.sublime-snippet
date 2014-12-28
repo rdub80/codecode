@@ -1,0 +1,10 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:/* OPTIONS: variables are (in order): duration, count, delay, function,  fill */
+}@include rubberBand;
+]]>
+  </content>
+  <tabTrigger>rubberBand</tabTrigger>
+  <description>rubberBand animation</description>
+</snippet>
