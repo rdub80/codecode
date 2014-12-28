@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include transition;
+@include trans;
 ]]>
 	</content>
 	<tabTrigger>transition</tabTrigger>
