@@ -1,0 +1,13 @@
+<snippet>
+  <content>
+<![CDATA[
+@media only screen and 
+(min-device-width : \$iphone5-min) and 
+(max-device-width : \$iphone5-max) { 
+	${1: /* iPhone 5 and 5S */ }
+}
+]]>
+  </content>
+  <tabTrigger>iphone</tabTrigger>
+  <description>iPhone 5 and 5S</description>
+</snippet>

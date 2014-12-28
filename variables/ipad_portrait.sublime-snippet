@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+@media only screen and 
+(min-device-width : \$ipad-min) and 
+(max-device-width : \$ipad-max) and 
+(orientation : portrait) { 
+	${1: /* iPad portrait */ }
+}
+]]>
+  </content>
+  <tabTrigger>ipad</tabTrigger>
+  <description>iPad portrait</description>
+</snippet>

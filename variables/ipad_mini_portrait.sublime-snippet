@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+<![CDATA[
+@media only screen and 
+(min-device-width : \$ipad-min) and 
+(max-device-width : \$ipad-max) and 
+(orientation : portrait) and 
+(-webkit-min-device-pixel-ratio: 1) { 
+	${1: /* iPad mini portrait */ }
+}
+]]>
+  </content>
+  <tabTrigger>ipad</tabTrigger>
+  <description>iPad mini portrait</description>
+</snippet>

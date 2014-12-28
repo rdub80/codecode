@@ -1,0 +1,14 @@
+<snippet>
+  <content>
+<![CDATA[
+@media only screen and 
+(min-device-width : \$iphone6plus-min) and 
+(max-device-width : \$iphone6plus-max) and 
+(orientation : landscape) { 
+	${1: /* iPhone 6+ landscape */ }
+}
+]]>
+  </content>
+  <tabTrigger>iphone</tabTrigger>
+  <description>iPhone 6+ landscape</description>
+</snippet>
