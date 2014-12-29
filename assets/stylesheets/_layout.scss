@@ -50,30 +50,30 @@
     }
   }
   .system:before {
-    @include only(mac) {
+    @include but(mac) {
       content: "mac";
     }
-    @include only(windows) {
+    @include but(windows) {
       content: "windows";
     }
-    @include only(android) {
+    @include but(android) {
       content: "android";
     }
-    @include only(linux) {
+    @include but(linux) {
       content: "linux";
     }
   }
   .browser:before {
-    @include only(safari) {
+    @include but(safari) {
       content: "safari";
     }
-    @include only(firefox) {
+    @include but(firefox) {
       content: "firefox";
     }
-    @include only(chrome) {
+    @include but(chrome) {
       content: "chrome";
     }
-    @include only(ie) {
+    @include but(ie) {
       content: "ie";
     }
   }
