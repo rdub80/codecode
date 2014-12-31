@@ -6,11 +6,11 @@ REQUIRES modernizr and Detectizr.
 System options are: mac, win, linux, android
 Browser options are: firefox, safari, ie (ie9, ie8, etc), chrome, opera
 */
-}@include but(${1:mac}) {
+}@include only(${1:mac}) {
 	$3
 }
 ]]>
   </content>
-  <tabTrigger>but</tabTrigger>
+  <tabTrigger>only</tabTrigger>
   <description>Rules for browser or system listed</description>
 </snippet>

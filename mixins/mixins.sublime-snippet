@@ -269,13 +269,13 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
     -o-background-size: cover !important;
     background-size: cover !important;
 }
-@mixin but(\$only: mac) {
+@mixin only(\$only: mac) {
       html.#{\$only} & {
         @content
       }
 }
-@mixin allbut(\$except: mac) {
-      html:not(.#{\$exception}) & {
+@mixin unless(\$unless: mac) {
+      html:not(.#{\$unless}) & {
         @content
       }
 }
