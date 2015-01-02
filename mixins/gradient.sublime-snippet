@@ -1,8 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-${3:/* top-down simple gradient */
-}@include gradient(${1:white}, ${2:black});
+@include gradient(${1:top color}, ${2:bottom color});
 ]]>
 	</content>
 	<tabTrigger>gradient</tabTrigger>

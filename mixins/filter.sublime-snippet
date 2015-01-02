@@ -1,11 +1,7 @@
 <snippet>
 	<content>
     <![CDATA[
-    ${3:/* 
-    OPTIONS:
-    blur(px)|brightness(%)|contrast(%)|saturate(%)|grayscale(%)|hue-rotate(deg)|invert(%)|opacity(%)|sepia(%)
-    */
-    }@include filter(${1:blur}, ${2:10px});
+    @include filter(${1:blur(px)|brightness(%)|contrast(%)|saturate(%)|grayscale(%)|hue-rotate(deg)|invert(%)|opacity(%)|sepia(%)}, ${2:%|px|deg});
     ]]>
   </content>
   <tabTrigger>filter</tabTrigger>

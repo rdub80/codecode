@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+@mixin orient(${1:portrait|landscape}) {
+  $2
+}
+]]>
+  </content>
+  <tabTrigger>orient</tabTrigger>
+  <description>Media Query for orientation</description>
+</snippet>

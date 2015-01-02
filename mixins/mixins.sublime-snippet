@@ -162,7 +162,7 @@
     &:not(:first-of-type) {
       padding-left: (\$gutter / 2);
     }
-    @media screen and (max-width: \$device) {
+    @media screen and (max-width: 767px) {
       width: 100% !important;
       display: block;
       float: none;
@@ -198,13 +198,7 @@
 }
 
 @mixin reset(\$type: all) {
-  @if \$type == all {
-      margin:       0px !important;
-      padding:       0px !important;
-      border:       none;
-      background:   transparent;
-    } 
-    @else if \$type == margin {
+  @if \$type == margin {
       margin:       0px !important;
     } 
     @else if \$type == padding {
@@ -213,10 +207,17 @@
     @else if \$type == border {
       border:       none;
     } 
+    @else if \$type == bg {
+      background:   transparent;
+    } 
     @else if \$type == list {
       list-style: none;
     } 
     @else {
+      margin:       0px !important;
+      padding:       0px !important;
+      border:       none;
+      background:   transparent;
     }
 }
 /*
@@ -287,7 +288,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
        @content
      }
    } 
-   @else if \$scope == "max" {
+   @else if \$scope == "all" {
     @media only screen and 
     (max-width : 1024px) { 
      @content
@@ -308,7 +309,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
      @content
    }
  } 
- @else if \$scope == "max" {
+ @else if \$scope == "all" {
   @media only screen and 
   (max-width : 568px) { 
    @content
@@ -329,7 +330,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
      @content
    }
  } 
- @else if \$scope == "max" {
+ @else if \$scope == "all" {
   @media only screen and 
   (max-width : 667px) { 
    @content
@@ -350,7 +351,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
      @content
    }
  } 
- @else if \$scope == "max" {
+ @else if \$scope == "all" {
   @media only screen and 
   (max-width : 480px) { 
    @content

@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-@include media(${1:ipad|iphone4|iphone5|iphone6}, ${2:strict|min|max}) {
+@include media(${1:ipad|iphone4|iphone5|iphone6}, ${2:strict|all|min}) {
 	${3: rules here}
 }
 ]]>

@@ -1,11 +1,7 @@
 <snippet>
 	<content>
     <![CDATA[
-    ${2:/* 
-    OPTIONS:
-    all|margin|padding|border|list
-    */
-    }@include reset(${1:all});
+    @include reset(${1:all|margin|padding|border|bg|list});
     ]]>
   </content>
   <tabTrigger>reset</tabTrigger>

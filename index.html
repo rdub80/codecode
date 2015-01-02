@@ -204,37 +204,63 @@
     title="master mixins list<hr>required to use macros on this list" class="label master">mixins</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="border-box<hr>Requires mixins" class="label">box</li>
+    title="border-box<hr>Requires <span class='code'>mixins</span>" class="label">box</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="center object verticallly and horizontally<hr>Requires mixins" class="label">centerer</li>
+    title="center object verticallly and horizontally<hr>Requires <span class='code'>mixins</span>" class="label">centerer</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="clearfix<hr>Requires mixins" class="label">clear</li>
+    title="clearfix<hr>Requires <span class='code'>mixins</span>" class="label">clear</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="background cover (spans all object)<hr>Requires mixins" class="label">cover</li>
+    title="background cover (spans all object)<hr>Requires <span class='code'>mixins</span>" class="label">cover</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="a hack to object to major iOS sizes. variable is px you detract from it.<hr>Requires mixins" class="label">devicewidth</li>
+    title="a hack to object to major iOS sizes. variable is px you detract from it.<hr>Requires <span class='code'>mixins</span>" class="label">devicewidth</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="hides text with ...<hr>Requires mixins" class="label">ellipsis</li>
+    title="hides text with ...<hr>Requires <span class='code'>mixins</span>" class="label">ellipsis</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="filter effects<hr>Requires mixins" class="label">filter</li> 
+    title="filter effects<hr>Requires <span class='code'>mixins</span>" class="label">filter</li>
+            <li class="label" data-toggle="collapse" href="#grid">
+      grid</li>
+      <div id="grid" class="collapse">
+        Simple grid with same-width columns that collapses automatically on phone devices.
+        <ol>
+          <li>Apply it in the parent element</li>
+          <li>Child elements (columns) should be either: li, dt, section or class <span class="code">.cell</span></li>
+        </ol>
+First variable is number of columns, second variable is gutter (in pixels).
+        <hr>
+    Requires <span class='code'>mixins</span>
+  </div> 
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="simple gradient<hr>Requires mixins" class="label">gradient</li>
+    title="simple gradient<hr>Requires <span class='code'>mixins</span>" class="label">gradient</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="quick grid: define number of cells, gutter (defaults to 20px) and make sure columns have class .cell<hr>Requires mixins" class="label">grid</li>
+    title="quick grid: define number of cells, gutter (defaults to 20px) and make sure columns have class .cell<hr>Requires <span class='code'>mixins</span>" class="label">grid</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="hides object text<hr>Requires mixins" class="label">hide-text</li>
-    <li data-toggle="tooltip" 
-    data-html="true" data-placement="bottom" 
-    title="media queries for major devices" class="label">media</li>
+    title="hides object text<hr>Requires <span class='code'>mixins</span>" class="label">hide-text</li>
+        <li class="label" data-toggle="collapse" href="#media">
+      media</li>
+      <div id="media" class="collapse">
+        Media queries for most devices. <hr>device variable options are <ul class="code">
+          <li>ipad</li>
+          <li>iphone6</li>
+          <li>iphone5</li>
+          <li>iphone4</li>
+        </ul> with more to come.<hr>
+        scope variable options are <ul>
+          <li><span class="code">strict</span> (rules apply only to device, use <span class="code">orient</span> inside it if you need orientation)</li>
+          <li><span class="code">all</span> (rules apply to device max size and smaller)</li>
+          <li><span class="code">min</span> (rules apply to device min size and smaller)</li>
+        </ul>
+        <hr>
+    Requires <span class='code'>mixins</span>
+  </div>
     <li class="label" data-toggle="collapse" href="#only">
       Only</li>
       <div id="only" class="collapse">
@@ -253,7 +279,7 @@
         <li>fontface</li>
         <li>touch</li>
         <li>flash</li>
-      </ul>
+      </ul>.
       <hr>
       Some useful Detectizr tags are systems <ul class="code">
       <li>mac</li>
@@ -270,49 +296,64 @@
     <ul class="code">
       <li>ie9</li>
       <li>safari8</li>
-    </ul>
+    </ul>.
     <hr>
-    <span class="code">only</span> requires mixins, modernizr, detectizr, SASS 3.1
+    Requires <span class='code'>mixins</span>, modernizr, detectizr, SASS 3.1
   </div>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="transparency<hr>Requires mixins" class="label">opacity</li>
+  title="transparency<hr>Requires <span class='code'>mixins</span>" class="label">opacity</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="rules for input placeholders<hr>Requires mixins" class="label">placeholder</li>
+  title="Media query for orientation<hr>Requires <span class='code'>mixins</span>" class="label">orient</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="add radius to objects: uniform or custom<hr>Requires mixins" class="label">radius</li>
+  title="rules for input placeholders<hr>Requires <span class='code'>mixins</span>" class="label">placeholder</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="cheesy reflect effect<hr>Requires mixins" class="label">reflect</li>
+  title="add radius to objects: uniform or custom<hr>Requires <span class='code'>mixins</span>" class="label">radius</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="reset object<hr>Requires mixins" class="label">reset</li>
+  title="cheesy reflect effect<hr>Requires <span class='code'>mixins</span>" class="label">reflect</li>
+      <li class="label" data-toggle="collapse" href="#reset">
+      reset</li>
+      <div id="reset" class="collapse">
+        Resets object properties. variables are
+        <ul>
+        <li><span class="code">all</span> (resets margin, padding, border)</li>
+        <li><span class="code">margin</span> (resets margin)</li>
+        <li><span class="code">padding</span> (resets padding)</li>
+        <li><span class="code">border</span> (resets border)</li>
+        <li><span class="code">bg</span> (resets background)</li>
+        <li><span class="code">list</span> (resets list)</li>
+      </ul>
+    <hr>
+    Requires <span class='code'>mixins</span>
+  </div>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="rotate object<hr>Requires mixins" class="label">rotate</li>
+  title="rotate object<hr>Requires <span class='code'>mixins</span>" class="label">rotate</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="scale object<hr>Requires mixins" class="label">scale</li>
+  title="scale object<hr>Requires <span class='code'>mixins</span>" class="label">scale</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="adds shadow if there's more to scroll. variable is bg color<hr>Requires mixins" class="label">scroll-hint</li>
+  title="adds shadow if there's more to scroll. variable is bg color<hr>Requires <span class='code'>mixins</span>" class="label">scroll-hint</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="text and box shadow<hr>Requires mixins" class="label">shadow</li> 
+  title="text and box shadow<hr>Requires <span class='code'>mixins</span>" class="label">shadow</li> 
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="a quick resizer, width|height<hr>Requires mixins" class="label">size</li>
+  title="a quick resizer, width|height<hr>Requires <span class='code'>mixins</span>" class="label">size</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="skew object<hr>Requires mixins" class="label">skew</li>
+  title="skew object<hr>Requires <span class='code'>mixins</span>" class="label">skew</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="for square sizes<hr>Requires mixins" class="label">square</li>
+  title="for square sizes<hr>Requires <span class='code'>mixins</span>" class="label">square</li>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="transition for animation<hr>Requires mixins" class="label">trans</li> 
+  title="transition for animation<hr>Requires <span class='code'>mixins</span>" class="label">trans</li> 
   <li class="label" data-toggle="collapse" href="#unless">
       unless</li>
       <div id="unless" class="collapse">
@@ -328,7 +369,7 @@
         <li>fontface</li>
         <li>touch</li>
         <li>flash</li>
-      </ul>
+      </ul>.
       <hr>
       Some useful Detectizr tags are systems <ul class="code">
       <li>mac</li>
@@ -345,13 +386,13 @@
     <ul class="code">
       <li>ie9</li>
       <li>safari8</li>
-    </ul>
+    </ul>.
     <hr>
-    <span class="code">unless</span> requires mixins, modernizr, detectizr, SASS 3.1
+    Requires <span class='code'>mixins</span>, modernizr, detectizr, SASS 3.1
   </div>
   <li data-toggle="tooltip" 
   data-html="true" data-placement="bottom" 
-  title="forces word-wrap<hr>Requires mixins" class="label">word-wrap</li>
+  title="forces word-wrap<hr>Requires <span class='code'>mixins</span>" class="label">word-wrap</li>
 </ul>
 </div>
 <div class="col-md-3">
@@ -371,28 +412,28 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounce</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounce</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">flash</li>
+          title="Requires <span class='code'>animate</span>" class="label">flash</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">pulse</li>
+          title="Requires <span class='code'>animate</span>" class="label">pulse</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rubberBand</li>
+          title="Requires <span class='code'>animate</span>" class="label">rubberBand</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">shake</li>
+          title="Requires <span class='code'>animate</span>" class="label">shake</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">swing</li>
+          title="Requires <span class='code'>animate</span>" class="label">swing</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">tada</li>
+          title="Requires <span class='code'>animate</span>" class="label">tada</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">wobble</li>
+          title="Requires <span class='code'>animate</span>" class="label">wobble</li>
 
         </ul>
       </div>
@@ -405,19 +446,19 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceIn</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceIn</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceInDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceInDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceInLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceInLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceInRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceInRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceInUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceInUp</li>
 
         </ul>
       </div>
@@ -430,19 +471,19 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceOut</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceOut</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceOutDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceOutDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceOutLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceOutLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceOutRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceOutRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">bounceOutUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">bounceOutUp</li>
 
         </ul>
       </div>
@@ -455,31 +496,31 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeIn</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeIn</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInDownBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInDownBig</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInLeftBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInLeftBig</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInRightBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInRightBig</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInUp</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeInUpBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeInUpBig</li>
 
         </ul>
       </div>
@@ -492,31 +533,31 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOut</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOut</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutDownBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutDownBig</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutLeftBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutLeftBig</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutRightBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutRightBig</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutUp</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">fadeOutUpBig</li>
+          title="Requires <span class='code'>animate</span>" class="label">fadeOutUpBig</li>
 
         </ul>
       </div>
@@ -529,19 +570,19 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">flip</li>
+          title="Requires <span class='code'>animate</span>" class="label">flip</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">flipInX</li>
+          title="Requires <span class='code'>animate</span>" class="label">flipInX</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">flipInY</li>
+          title="Requires <span class='code'>animate</span>" class="label">flipInY</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">flipOutX</li>
+          title="Requires <span class='code'>animate</span>" class="label">flipOutX</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">flipOutY</li>
+          title="Requires <span class='code'>animate</span>" class="label">flipOutY</li>
 
         </ul>
       </div>
@@ -554,10 +595,10 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">lightSpeedIn</li>
+          title="Requires <span class='code'>animate</span>" class="label">lightSpeedIn</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">lightSpeedOut</li>
+          title="Requires <span class='code'>animate</span>" class="label">lightSpeedOut</li>
 
         </ul>
       </div>
@@ -570,19 +611,19 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateIn</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateIn</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateInDownLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateInDownLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateInDownRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateInDownRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateInUpLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateInUpLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateInUpRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateInUpRight</li>
 
         </ul>
       </div>
@@ -595,19 +636,19 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateOut</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateOut</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateOutDownLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateOutDownLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateOutDownRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateOutDownRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateOutUpLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateOutUpLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rotateOutUpRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">rotateOutUpRight</li>
 
         </ul>
       </div>
@@ -620,16 +661,16 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideInDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideInDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideInLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideInLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideInRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideInRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideInUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideInUp</li>
 
         </ul>
       </div>
@@ -642,16 +683,16 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideOutDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideOutDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideOutLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideOutLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideOutRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideOutRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">slideOutUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">slideOutUp</li>
 
         </ul>
       </div>
@@ -663,13 +704,13 @@
         <ul class="macros">
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">hinge</li>
+          title="Requires <span class='code'>animate</span>" class="label">hinge</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rollIn</li>
+          title="Requires <span class='code'>animate</span>" class="label">rollIn</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">rollOut</li>
+          title="Requires <span class='code'>animate</span>" class="label">rollOut</li>
         </ul>
       </div>
     </div>
@@ -680,19 +721,19 @@
         <ul class="macros">
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomIn</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomIn</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomInDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomInDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomInLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomInLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomInRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomInRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomInUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomInUp</li>
 
         </ul>
       </div>
@@ -705,19 +746,19 @@
 
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomOut</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomOut</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomOutDown</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomOutDown</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomOutLeft</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomOutLeft</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomOutRight</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomOutRight</li>
           <li data-toggle="tooltip" 
           data-html="true" data-placement="bottom" 
-          title="requires animate" class="label">zoomOutUp</li>
+          title="Requires <span class='code'>animate</span>" class="label">zoomOutUp</li>
         </ul>
       </div>
     </div>

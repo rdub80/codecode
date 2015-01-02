@@ -28,6 +28,14 @@ ul.code {
     @include reset(all);
   }
 }
+  ul, ol {
+      &:not(.code) {
+      margin: 0;
+      margin-left: 20px;
+      padding: 0;
+      }
+      
+  }
 .macros {
   padding: 0;
 }
