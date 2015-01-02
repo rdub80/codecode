@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include skew(${1:12});
+@include skew($1);
 ]]>
 	</content>
 	<tabTrigger>skew</tabTrigger>

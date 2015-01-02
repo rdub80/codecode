@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include rotate(${1:12});
+@include rotate($1);
 ]]>
 	</content>
 	<tabTrigger>rotate</tabTrigger>

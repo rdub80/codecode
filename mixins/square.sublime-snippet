@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include square(${1:10px});
+@include square($1);
 ]]>
 	</content>
 	<tabTrigger>square</tabTrigger>

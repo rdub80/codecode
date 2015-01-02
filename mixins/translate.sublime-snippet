@@ -1,8 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-${3:/* moves object left, top. negative values ok. */
-}@include translate(${1:10}, ${2:-20});
+@include translate(${1:left}, ${2:right});
 ]]>
 	</content>
 	<tabTrigger>translate</tabTrigger>

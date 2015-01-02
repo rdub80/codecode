@@ -1,8 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-${5:/* clockwise order from top-left- */
-}@include radius-custom(${1:5px}, ${2:5px}, ${3:5px}, ${4:5px});
+@include radius-custom(${1:top}, ${2:right}, ${3:bottom}, ${4:left});
 ]]>
 	</content>
 	<tabTrigger>radius</tabTrigger>

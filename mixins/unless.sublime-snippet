@@ -1,13 +1,8 @@
 <snippet>
   <content>
 <![CDATA[
-${2:/*
-REQUIRES modernizr and Detectizr.
-System options are: mac, win, linux, android
-Browser options are: firefox, safari, ie (ie9, ie8, etc), chrome, opera
-*/
-}@include unless(${1:mac}) {
-	$3
+@include unless(${1:modernizr or detectizr rule}) {
+	$2
 }
 ]]>
   </content>

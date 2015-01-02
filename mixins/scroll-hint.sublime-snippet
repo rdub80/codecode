@@ -1,8 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-${2:/* add scroll-hint gradient on element (shadows appear only if more content hidden). variable is bg color */
-}@include scroll-hint(${1:white});
+@include scroll-hint(${1:background color});
 ]]>
 	</content>
 	<tabTrigger>scroll-hint</tabTrigger>

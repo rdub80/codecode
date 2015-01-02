@@ -1,8 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-${2:/* apply oppacity from 0 to 100 */
-}@include opacity(${1:50});
+@include opacity($1);
 ]]>
 	</content>
 	<tabTrigger>opacity</tabTrigger>

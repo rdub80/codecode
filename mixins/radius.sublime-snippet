@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include radius(${1: radius});
+@include radius($1);
 ]]>
 	</content>
 	<tabTrigger>radius</tabTrigger>

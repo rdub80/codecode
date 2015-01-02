@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include reflect($length: ${1:50}%, $opacity: ${2:.2});
+@include reflect(${1:length (in %)}, ${2:opacity (between 0 and 1)});
 ]]>
 	</content>
 	<tabTrigger>reflect</tabTrigger>
