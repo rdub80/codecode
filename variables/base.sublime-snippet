@@ -138,7 +138,7 @@ a {
 	@include trans;
 }
 h1, h2, h3, h4 {
-	\$font-family: \$f2;
+	\$font-family: \$f1;
 	font-weight: normal;
 }
 .hidden {
@@ -146,6 +146,6 @@ h1, h2, h3, h4 {
 }
 ]]>
   </content>
-  <tabTrigger>variables</tabTrigger>
-  <description>Variables CSS rules</description>
+  <tabTrigger>base</tabTrigger>
+  <description>Base CSS rules</description>
 </snippet>

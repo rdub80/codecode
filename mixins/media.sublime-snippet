@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+@include media(${1:ipad|iphone4|iphone5|iphone6}, ${2:strict|min|max}) {
+	${3: rules here}
+}
+]]>
+  </content>
+  <tabTrigger>media</tabTrigger>
+  <description>Media Queries</description>
+</snippet>

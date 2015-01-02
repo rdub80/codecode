@@ -154,7 +154,7 @@
     padding: 0px;
     @include box;
     &:not(:last-of-type) {
-          padding-right: ($gutter / 2);
+      padding-right: ($gutter / 2);
     }
     &:not(:first-of-type) {
       padding-left: ($gutter / 2);
@@ -196,25 +196,25 @@
 
 @mixin reset($type: all) {
   @if $type == all {
-      margin:       0px !important;
-      padding:       0px !important;
-      border:       none;
-      background:   transparent;
-    } 
-    @else if $type == margin {
-      margin:       0px !important;
-    } 
-    @else if $type == padding {
-      padding:       0px !important;
-    } 
-    @else if $type == border {
-      border:       none;
-    } 
-    @else if $type == list {
-      list-style: none;
-    } 
-    @else {
-    }
+    margin:       0px !important;
+    padding:       0px !important;
+    border:       none;
+    background:   transparent;
+  } 
+  @else if $type == margin {
+    margin:       0px !important;
+  } 
+  @else if $type == padding {
+    padding:       0px !important;
+  } 
+  @else if $type == border {
+    border:       none;
+  } 
+  @else if $type == list {
+    list-style: none;
+  } 
+  @else {
+  }
 }
 /*
 from 
@@ -261,18 +261,107 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
   }
 }
 @mixin cover {
-      -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
 }
 @mixin but($only: mac) {
-      html.#{$only} & {
-        @content
-      }
+  html.#{$only} & {
+    @content
+  }
 }
 @mixin allbut($except: mac) {
-      html:not(.#{$exception}) & {
-        @content
-      }
+  html:not(.#{$exception}) & {
+    @content
+  }
+}
+@mixin media($device: ipad, $scope: strict, $variation: mini) {
+  @if $device == "ipad" {
+    @if $scope == "min" {
+      @media only screen and 
+      (max-width : 768px) { 
+       @content
+     }
+   } 
+   @else if $scope == "max" {
+    @media only screen and 
+    (max-width : 1024px) { 
+     @content
+   }
+ } 
+ @else {
+  @media only screen and 
+  (min-device-width : 768px) and 
+  (max-device-width : 1024px) { 
+   @content
+ }
+}
+} 
+@else if $device == "iphone5" {
+  @if $scope == "min" {
+    @media only screen and 
+    (max-width : 320px) { 
+     @content
+   }
+ } 
+ @else if $scope == "max" {
+  @media only screen and 
+  (max-width : 568px) { 
+   @content
+ }
+} 
+@else {
+  @media only screen and 
+  (min-device-width : 320px) and 
+  (max-device-width : 568px) { 
+   @content
+ }
+}
+} 
+@else if $device == "iphone6" {
+  @if $scope == "min" {
+    @media only screen and 
+    (max-width : 375px) { 
+     @content
+   }
+ } 
+ @else if $scope == "max" {
+  @media only screen and 
+  (max-width : 667px) { 
+   @content
+ }
+} 
+@else {
+  @media only screen and 
+  (min-device-width : 375px) and 
+  (max-device-width : 667px) { 
+   @content
+ }
+}
+}
+@else if $device == "iphone4" {
+  @if $scope == "min" {
+    @media only screen and 
+    (max-width : 320px) { 
+     @content
+   }
+ } 
+ @else if $scope == "max" {
+  @media only screen and 
+  (max-width : 480px) { 
+   @content
+ }
+} 
+@else {
+  @media only screen and 
+  (min-device-width : 320px) and 
+  (max-device-width : 480px) { 
+   @content
+ }
+}
+} 
+@else {
+
+}
 }

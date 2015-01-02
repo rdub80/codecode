@@ -279,6 +279,95 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
         @content
       }
 }
+@mixin media(\$device: ipad, \$scope: strict, \$variation: mini) {
+  @if \$device == "ipad" {
+    @if \$scope == "min" {
+      @media only screen and 
+      (max-width : 768px) { 
+       @content
+     }
+   } 
+   @else if \$scope == "max" {
+    @media only screen and 
+    (max-width : 1024px) { 
+     @content
+   }
+ } 
+ @else {
+  @media only screen and 
+  (min-device-width : 768px) and 
+  (max-device-width : 1024px) { 
+   @content
+ }
+}
+} 
+@else if \$device == "iphone5" {
+  @if \$scope == "min" {
+    @media only screen and 
+    (max-width : 320px) { 
+     @content
+   }
+ } 
+ @else if \$scope == "max" {
+  @media only screen and 
+  (max-width : 568px) { 
+   @content
+ }
+} 
+@else {
+  @media only screen and 
+  (min-device-width : 320px) and 
+  (max-device-width : 568px) { 
+   @content
+ }
+}
+} 
+@else if \$device == "iphone6" {
+  @if \$scope == "min" {
+    @media only screen and 
+    (max-width : 375px) { 
+     @content
+   }
+ } 
+ @else if \$scope == "max" {
+  @media only screen and 
+  (max-width : 667px) { 
+   @content
+ }
+} 
+@else {
+  @media only screen and 
+  (min-device-width : 375px) and 
+  (max-device-width : 667px) { 
+   @content
+ }
+}
+}
+@else if \$device == "iphone4" {
+  @if \$scope == "min" {
+    @media only screen and 
+    (max-width : 320px) { 
+     @content
+   }
+ } 
+ @else if \$scope == "max" {
+  @media only screen and 
+  (max-width : 480px) { 
+   @content
+ }
+} 
+@else {
+  @media only screen and 
+  (min-device-width : 320px) and 
+  (max-device-width : 480px) { 
+   @content
+ }
+}
+} 
+@else {
+
+}
+}
 ]]>
   </content>
   <tabTrigger>mixins</tabTrigger>
