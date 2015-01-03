@@ -3,14 +3,17 @@ a.label, .label a {
 }
 .label[data-toggle="collapse"] {
   cursor: pointer;
+  padding-right: 37px;
   &:after {
-    content:"\f05a";
+    content:"\f129";
     float: right;
     font-family: $font-2;
     font-size: 16px;
-    margin: 4px -7px 0 7px;
-    @include shadow(0px -1px 2px rgba(0, 0, 0, .4), text);
-    @include opacity(70);
+    margin: -5px 5px 0 10px;
+    background-color: darken(#D2A800, 7%);
+     @include size(27px, 32px);  
+     position: absolute; 
+     padding-top: 8px;
   }
 }
 ul.code {
