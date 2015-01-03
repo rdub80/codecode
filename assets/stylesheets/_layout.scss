@@ -153,6 +153,9 @@ h2 + h2 {
     &:first-of-type {
       border-top: none;
     }
+      @media screen and (max-width: 1000px) {
+        text-align: center;
+      }
   }
   .gif {
   background-image: url(../images/dropdown.gif);
