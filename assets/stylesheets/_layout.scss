@@ -149,8 +149,6 @@ h2 + h2 {
   h2 {
     font-size: 25px;
     padding: 5px 0 !important;
-        @include reset(all);
-        
     margin: 0;
     &:first-of-type {
       border-top: none;
