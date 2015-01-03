@@ -1,7 +1,7 @@
 <snippet>
 	<content>
 <![CDATA[
-@include translate(${1:left}, ${2:right});
+@include translate(${1:left}, ${2:top});
 ]]>
 	</content>
 	<tabTrigger>translate</tabTrigger>
