@@ -10,7 +10,7 @@ ${9:<!-- for divider, use <li class="divider"></li> -->
     <li><a href="${7:#}">${4:{Second Option]}</a></li>
     <li><a href="${8:#}">${5:[Third Option]}</a></li>
   </ul>
-</div><!-- dropdown -->
+</div>
 ]]></content>
   <tabTrigger>dropdown</tabTrigger>
   <description>Bootstrap 3 Dropdown</description>

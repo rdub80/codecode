@@ -16,6 +16,12 @@ a.label, .label a {
      padding-top: 8px;
   }
 }
+.demo {
+  background-image: url(../images/dropdown.gif);
+  width: 100%;
+  height: 220px;
+  margin-top: 20px;
+}
 ul.code {
   @include reset(all);
   display: inline-block !important;
