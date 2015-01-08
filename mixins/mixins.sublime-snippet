@@ -380,7 +380,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 }
 } 
 @else {
-@media screen and (\$scope +-width: \$device +px) {
+@media screen and (\$scope +-width: \$device) {
   @content
 }
 }

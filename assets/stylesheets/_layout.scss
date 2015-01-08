@@ -90,30 +90,30 @@ form {
   }
 }
 .system:before {
-  @include but(mac) {
+  @include only(mac) {
     content: "mac";
   }
-  @include but(windows) {
+  @include only(windows) {
     content: "windows";
   }
-  @include but(android) {
+  @include only(android) {
     content: "android";
   }
-  @include but(linux) {
+  @include only(linux) {
     content: "linux";
   }
 }
 .browser:before {
-  @include but(safari) {
+  @include only(safari) {
     content: "safari";
   }
-  @include but(firefox) {
+  @include only(firefox) {
     content: "firefox";
   }
-  @include but(chrome) {
+  @include only(chrome) {
     content: "chrome";
   }
-  @include but(ie) {
+  @include only(ie) {
     content: "ie";
   }
 }

@@ -17,6 +17,20 @@
     opacity: 0;
   }
 }
+@mixin disable($type: link) {
+  @if $type == "select" {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+  } 
+  @else if $type == "link" {
+    pointer-events: none;
+    cursor: default;
+  }
+}
 @mixin filter($filter: blur,$value: 10px) { 
   -webkit-filter: $filter+unquote('(#{$value})');
   -moz-filter: $filter+unquote('(#{$value})');
@@ -154,12 +168,12 @@
     padding: 0px;
     @include box;
     &:not(:last-of-type) {
-      padding-right: ($gutter / 2);
+          padding-right: ($gutter / 2);
     }
     &:not(:first-of-type) {
       padding-left: ($gutter / 2);
     }
-    @media screen and (max-width: $device) {
+    @media screen and (max-width: 767px) {
       width: 100% !important;
       display: block;
       float: none;
@@ -195,26 +209,27 @@
 }
 
 @mixin reset($type: all) {
-  @if $type == all {
-    margin:       0px !important;
-    padding:       0px !important;
-    border:       none;
-    background:   transparent;
-  } 
-  @else if $type == margin {
-    margin:       0px !important;
-  } 
-  @else if $type == padding {
-    padding:       0px !important;
-  } 
-  @else if $type == border {
-    border:       none;
-  } 
-  @else if $type == list {
-    list-style: none;
-  } 
-  @else {
-  }
+  @if $type == margin {
+      margin:       0px !important;
+    } 
+    @else if $type == padding {
+      padding:       0px !important;
+    } 
+    @else if $type == border {
+      border:       none;
+    } 
+    @else if $type == bg {
+      background:   transparent;
+    } 
+    @else if $type == list {
+      list-style: none;
+    } 
+    @else {
+      margin:       0px !important;
+      padding:       0px !important;
+      border:       none;
+      background:   transparent;
+    }
 }
 /*
 from 
@@ -261,30 +276,30 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
   }
 }
 @mixin cover {
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important;
+      -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
 }
-@mixin but($only: mac) {
-  html.#{$only} & {
-    @content
-  }
+@mixin only($only: mac) {
+      html.#{$only} & {
+        @content
+      }
 }
-@mixin allbut($except: mac) {
-  html:not(.#{$exception}) & {
-    @content
-  }
+@mixin unless($unless: mac) {
+      html:not(.#{$unless}) & {
+        @content
+      }
 }
 @mixin media($device: ipad, $scope: strict, $variation: mini) {
   @if $device == "ipad" {
-    @if $scope == "min" {
+    @if $scope == "portrait" {
       @media only screen and 
       (max-width : 768px) { 
        @content
      }
    } 
-   @else if $scope == "max" {
+   @else if $scope == "landscape" {
     @media only screen and 
     (max-width : 1024px) { 
      @content
@@ -299,13 +314,13 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 }
 } 
 @else if $device == "iphone5" {
-  @if $scope == "min" {
+  @if $scope == "portrait" {
     @media only screen and 
     (max-width : 320px) { 
      @content
    }
  } 
- @else if $scope == "max" {
+ @else if $scope == "landscape" {
   @media only screen and 
   (max-width : 568px) { 
    @content
@@ -320,13 +335,13 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 }
 } 
 @else if $device == "iphone6" {
-  @if $scope == "min" {
+  @if $scope == "portrait" {
     @media only screen and 
     (max-width : 375px) { 
      @content
    }
  } 
- @else if $scope == "max" {
+ @else if $scope == "landscape" {
   @media only screen and 
   (max-width : 667px) { 
    @content
@@ -341,13 +356,13 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 }
 }
 @else if $device == "iphone4" {
-  @if $scope == "min" {
+  @if $scope == "portrait" {
     @media only screen and 
     (max-width : 320px) { 
      @content
    }
  } 
- @else if $scope == "max" {
+ @else if $scope == "landscape" {
   @media only screen and 
   (max-width : 480px) { 
    @content
@@ -362,6 +377,8 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 }
 } 
 @else {
-
+@media screen and ($scope +-width: $device) {
+  @content
+}
 }
 }
