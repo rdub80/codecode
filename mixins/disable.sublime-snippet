@@ -1,0 +1,9 @@
+<snippet>
+  <content>
+<![CDATA[
+@include disable(link|select);
+]]>
+  </content>
+  <tabTrigger>disable</tabTrigger>
+  <description>Disable link, text or image select</description>
+</snippet>

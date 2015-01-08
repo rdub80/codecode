@@ -20,6 +20,20 @@
     opacity: 0;
   }
 }
+@mixin disable(\$type: link) {
+  @if \$type == "select" {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+  } 
+  @else if \$type == "link" {
+    pointer-events: none;
+    cursor: default;
+  }
+}
 @mixin filter(\$filter: blur,\$value: 10px) { 
   -webkit-filter: \$filter+unquote('(#{\$value})');
   -moz-filter: \$filter+unquote('(#{\$value})');
