@@ -1,16 +1,29 @@
-@import 'variables';
+@import 'mixins';
 @import 'base';
+@import 'animate';
 @import 'layout';
 @import 'modules';
-@media screen and (max-width: 1082px) {
-  @import 'devices/ipad-all';
+
+a[data-toggle="collapse"] {
+  color: $c1;
+  display: block; 
+  &:hover {
+  	 text-decoration: none;
+  	}
+  }
+
+  a.label {
+  	
+  			@extend .label;
+  			padding-bottom: 2px;
+padding: 5px 15px 2px 15px !important;
+color: $c1;
+border-bottom: dotted 1px $c1;
+&:hover {
+	color: $c1;
 }
-@media screen and (max-width: 991px) {
-  @import 'devices/ipad-portrait';
-}
-@media screen and (max-width: 767px) {
-  @import 'devices/iphone-all';
-}
-@media screen and (max-width: 560px) {
- @import 'devices/iphone-portrait';
-}
+  }
+
+  .credits a {
+  			padding: 5px !important;
+  }

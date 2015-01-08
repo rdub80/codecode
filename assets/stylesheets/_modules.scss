@@ -1,7 +1,9 @@
+
+
 h2 {
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
-  padding: $gap-1 0;
+  padding: $g1 0;
 }
 body {
   margin-top: 100px;
@@ -12,7 +14,8 @@ body {
   color: #333;
 }
 a:not(.btn) {
-  @extend %reset-link;
+      @include reset(link);
+      
 }
 ul {
  list-style-type: disc;
@@ -33,7 +36,7 @@ ol {
   border: none;
   @include radius(0px);
   word-break: keep-all !important;
-  @include transition;
+  @include trans;
   background-color: lighten(yellow, 40%);
   &:hover {
     background-color: lighten(yellow, 20%);
@@ -49,7 +52,7 @@ em {
   & > li {
     margin-bottom: 5px;
     display: inline-block;
-    @include transition;
+    @include trans;
   }
 
 }
@@ -60,10 +63,10 @@ em {
   }
   .tooltip-inner {
     text-align: left;
-    padding: $gap-1 15px;
+    padding: $g1 15px;
     font-size: 12px;
     ul {
-      padding-top: $gap-1 !important;
+      padding-top: $g1 !important;
     }
     li {
       border-top: solid 1px #ccc;
@@ -91,7 +94,7 @@ footer {
   &.footer {
     background-color: #333333;
     color: #eee;
-    padding-bottom: $gap-1;
+    padding-bottom: $g1;
     font-size: 20px;
     .tooltip .tooltip-inner {
       font-family: Arial, Helvetica;
@@ -117,7 +120,7 @@ footer {
      }
    }
    p {
-    margin-top: $gap-1;
+    margin-top: $g1;
     margin-bottom: 0px;
     display: inline-block;
     &.credits {
@@ -163,7 +166,7 @@ header {
       margin: none !important;
       padding: 0px 20px;
       height: 100px;
-      @extend %border-box;
+      @include box;
       font-size: 75px;
       span {
         color: white;
@@ -193,14 +196,14 @@ header {
     float: none;
     display: inline-block;
     vertical-align: top;
-    margin-left: $gap-1;
+    margin-left: $g1;
 
 
   }
   @media screen and (max-width: 767px) {
    margin-left: 0px;
-   margin-bottom: $gap-1;
-   padding-top: $gap-1;
+   margin-bottom: $g1;
+   padding-top: $g1;
    width: 100%;
    .btn {
      display: block;
@@ -208,12 +211,12 @@ header {
    }
  }
  .btn {
-  padding: $gap-1 20px;
+  padding: $g1 20px;
   @include radius(2px);
   background-color: #ffcf00;
   color: #333;
   border: none;
-  @include transition;
+  @include trans;
   &:hover {
     @include translate(0, 2); 
     background-color: lighten(#ffcf00, 20%);
@@ -242,7 +245,7 @@ header {
   height: 130px;
   border: 0;
   z-index: 1000;
-  @include transition;
+  @include trans;
   &:hover {
     width: 135px;
     height: 135px;

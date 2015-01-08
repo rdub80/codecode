@@ -7,7 +7,7 @@ a.label, .label a {
   &:after {
     content:"\f129";
     float: right;
-    font-family: $font-2;
+    font-family: $f2;
     font-size: 16px;
     margin: -5px 5px 0 10px;
     background-color: darken(#D2A800, 7%);
@@ -167,4 +167,18 @@ h2 + h2 {
     height: 220px;
     margin-top: 20px;
   }
+}
+html:not(.mac) .visible-mac, 
+html:not(.windows) .visible-windows, 
+html:not(.linux) .visible-linux {
+  display: none;
+}
+.in {
+  margin-bottom: 20px;
+    h3 {
+      margin: 5px 0;
+    } 
+    .code {
+      display: block;
+    }
 }
