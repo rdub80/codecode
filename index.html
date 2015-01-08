@@ -251,7 +251,13 @@ First variable is number of columns, second variable is gutter (in pixels).
         <li class="label" data-toggle="collapse" href="#media">
       media</li>
       <div id="media" class="collapse">
-        Media queries for most devices. <hr>device variable options are <ul class="code">
+        Media queries for most devices. You can either use numbers, like
+        <div class="code">
+          @include media(200, max)
+        </div> and it outputs as <div class="code">
+          @media screen and (max-width: 200px)
+        </div>
+(variables are number and min|max), or use proper device names:  <ul class="code">
           <li>ipad</li>
           <li>iphone6</li>
           <li>iphone5</li>
@@ -259,8 +265,8 @@ First variable is number of columns, second variable is gutter (in pixels).
         </ul> with more to come.<hr>
         scope variable options are <ul>
           <li><span class="code">strict</span> (rules apply only to device, use <span class="code">orient</span> inside it if you need orientation)</li>
-          <li><span class="code">all</span> (rules apply to device max size and smaller)</li>
-          <li><span class="code">min</span> (rules apply to device min size and smaller)</li>
+          <li><span class="code">landscape</span> (rules apply to landscape and smaller)</li>
+          <li><span class="code">portrait</span> (rules apply to portrait and smaller)</li>
         </ul>
         <hr>
     Requires <span class='code'>mixins</span>
