@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-@include disable(link|select);
+@include disable(${1:link|select});
 ]]>
   </content>
   <tabTrigger>disable</tabTrigger>
