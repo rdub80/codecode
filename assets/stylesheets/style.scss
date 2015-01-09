@@ -1,29 +1,31 @@
 @import 'mixins';
 @import 'base';
+@import 'colors';
+@import 'colortest';
 @import 'animate';
 @import 'layout';
 @import 'modules';
 
 a[data-toggle="collapse"] {
-  color: $c1;
-  display: block; 
-  &:hover {
-  	 text-decoration: none;
-  	}
-  }
-
-  a.label {
-  	
-  			@extend .label;
-  			padding-bottom: 2px;
-padding: 5px 15px 2px 15px !important;
-color: $c1;
-border-bottom: dotted 1px $c1;
-&:hover {
 	color: $c1;
+	display: block; 
+	&:hover {
+		text-decoration: none;
+	}
 }
-  }
 
-  .credits a {
-  			padding: 5px !important;
-  }
+a.label {
+
+	@extend .label;
+	padding-bottom: 2px;
+	padding: 5px 15px 2px 15px !important;
+	color: $c1;
+	border-bottom: dotted 1px $c1;
+	&:hover {
+		color: $c1;
+	}
+}
+
+.credits a {
+	padding: 5px !important;
+}
