@@ -7,7 +7,7 @@
 @import 'modules';
 
 a[data-toggle="collapse"] {
-	color: $c1;
+	color: #333;
 	display: block; 
 	&:hover {
 		text-decoration: none;
@@ -15,14 +15,13 @@ a[data-toggle="collapse"] {
 }
 
 a.label {
-
 	@extend .label;
 	padding-bottom: 2px;
 	padding: 5px 15px 2px 15px !important;
-	color: $c1;
-	border-bottom: dotted 1px $c1;
+	color: #333;
+	border-bottom: dotted 1px #333;
 	&:hover {
-		color: $c1;
+		color: #333;
 	}
 }
 

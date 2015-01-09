@@ -182,3 +182,17 @@ html:not(.linux) .visible-linux {
       display: block;
     }
 }
+
+
+.show-touch {
+  display: inline-block;
+  @include unless(touch) {
+    display: none;
+  }
+}
+.hide-touch {
+  display: none;
+  @include unless(touch) {
+    display: inline-block;
+  }
+}

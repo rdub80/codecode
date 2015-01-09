@@ -6,6 +6,6 @@
 }
 ]]>
   </content>
-  <tabTrigger>allbut</tabTrigger>
+  <tabTrigger>unless</tabTrigger>
   <description>Rules for all but system or browser listed</description>
 </snippet>
