@@ -340,7 +340,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 @else if \$device == "iphone6" {
   @if \$scope == "portrait" {
     @media only screen and 
-    (max-width : 375px) { 
+    (min-width: 375px) { 
      @content
    }
  } 
@@ -352,8 +352,8 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
 } 
 @else {
   @media only screen and 
-  (min-device-width : 375px) and 
-  (max-device-width : 667px) { 
+  (min-device-width: 375px) and 
+  (max-device-width: 667px) { 
    @content
  }
 }
