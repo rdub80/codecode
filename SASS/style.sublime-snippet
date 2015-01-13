@@ -1,0 +1,24 @@
+<snippet>
+  <content>
+<![CDATA[
+${1:// for each import:
+// 1. create new file as _NAMEHERE.scss
+// 2. inside it, type the same name, tab, to populate content, save
+// 3. uncomment import to activate
+
+}// universal rules (try not to change it, and update often)
+
+// @import 'base';
+// @import 'mixins';
+// @import 'animate';
+// @import 'print';
+
+// project rules (feel free to edit)
+
+// @import 'layout';
+// @import 'modules';
+]]>
+  </content>
+  <tabTrigger>style</tabTrigger>
+  <description>Style CSS import rules</description>
+</snippet>
