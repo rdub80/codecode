@@ -16,6 +16,29 @@ a.label, .label a {
     padding-top: 8px;
   }
 }
+.label {
+  &.new, &.update {
+    padding-left: 23px;
+    &:before {
+      float: left;
+      font-family: $f4;
+      font-size: 15px;
+      padding: 0;
+      position: absolute; 
+      margin-lefT: -18px;
+      margin-top: 3px;
+      @include wobble($count: infinite);
+    }
+  }
+  &.new:before {
+    content: "\f005";
+
+  }
+  &.update:before {
+   content: "\f006";
+        
+  }
+}
 
 ul.code {
   @include reset(all);
