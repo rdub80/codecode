@@ -182,8 +182,6 @@ html:not(.linux) .visible-linux {
       display: block;
     }
 }
-
-
 .show-touch {
   display: inline-block;
   @include unless(touch) {
