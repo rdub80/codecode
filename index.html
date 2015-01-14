@@ -181,18 +181,37 @@
      <li><a href="http://modernizr.com" target="other" class="label">modernizr</a></li>
      <li><a href="http://weblinc.github.io/jquery.smoothState.js/index.html" target="other" class="label">smoothstate</a></li>
    </ul>
-   <h2>SASS macros</h2>
-   <p>SASS-only macros. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
+   <h2>Style macros</h2>
+   <p>All base SASS macros. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
    <ul class="macros">
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="Style CSS import rules" class="label master new">style</li>
+    title="Style CSS rules" class="label master new">style</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
-    title="Base CSS rules (edit variables)" class="label update">base</li>
+    title="Base CSS rules, with brand variables.<hr>Requires <span class='code'>style</span>" class="label update">base</li>
+    <li data-toggle="tooltip" 
+    data-html="true" data-placement="bottom" 
+    title="master mixins list<hr>Requires <span class='code'>style</span><hr>Refer to mixins macros list" class="label">mixins</li>
+    <li class="label new" data-toggle="collapse" href="#colors">
+      colors</li>
+      <div id="colors" class="collapse">
+        Powerful functions extending style colors on complementary, split, etc. <a href="colors.html">See color map</a> for more info.
+        <hr>
+        Requires <span class='code'>style</span>
+        <hr>
+        Soon: a live, actionable color map, per project (you change your color variables, it changes accordingly).
+      </div> 
+    <li data-toggle="tooltip" 
+    data-html="true" data-placement="bottom" 
+    title="master animate list<hr>Requires <span class='code'>style</span><hr>Refer to animate macros list" class="label">animate</li>
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
     title="Print CSS rules" class="label new">print</li>
+    </ul>
+   <h2>SASS helpers macros</h2>
+   <p><span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
+   <ul class="macros">
     <li data-toggle="tooltip" 
     data-html="true" data-placement="bottom" 
     title="quick and dirty way to point to objects when testing: solid blue, dotted green, dashed red" class="label">find</li>

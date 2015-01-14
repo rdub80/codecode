@@ -47,7 +47,6 @@ ${6:// for each import:
 
 // @import 'base';
 // @import 'mixins';
-// @import 'colors';
 // @import 'animate';
 // @import 'print';
 

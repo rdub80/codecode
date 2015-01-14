@@ -1,45 +1,6 @@
 <snippet>
   <content>
 <![CDATA[
-// brand variables
-// make sure most of your rules point to that
-
-// Title font
-\$f1: ${1:Georgia, serif};
-
-// Text font
-
-\$f2: ${2:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif};
-
-// Monospace font
-\$f3: ${3:"Courier New", Courier, monospace};
-
-// Icon font
-\$f4: ${4:FontAwesome};
-
-// base gap
-\$g1: ${5:10px};
-
-// background color
-\$c0: ${6:white};
-
-//text color
-\$c1: ${7:black};
-
-// accent color
-\$c2: ${8:grey};
-
-// color 3
-\$c3: ${9:red};
-
-// color 4
-\$c4: ${10:green};
-
-// color 5
-\$c5: ${11:blue};
-
-// other base values (feel free to update once and a while)
-
 // gap variations
 
 \$g2: \$g1 * 2;
