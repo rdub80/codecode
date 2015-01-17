@@ -21,7 +21,7 @@
 \$color-4: ${10:green};
 \$color-5: ${11:blue};
 
-${6:// for each import:
+${12:// for each import:
 // 1. create new file as _IMPORTNAMEHERE.scss
 // 2. inside it, type the same name('base' for base, 'mixins' for mixins, etc), hit tab, to populate content, save
 // 3. uncomment import to activate
