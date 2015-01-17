@@ -3,7 +3,7 @@
 h2 {
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
-  padding: $g1 0;
+  padding: $gap-1 0;
 }
 body {
   margin-top: 100px;
@@ -63,10 +63,10 @@ em {
   }
   .tooltip-inner {
     text-align: left;
-    padding: $g1 15px;
+    padding: $gap-1 15px;
     font-size: 12px;
     ul {
-      padding-top: $g1 !important;
+      padding-top: $gap-1 !important;
     }
     li {
       border-top: solid 1px #ccc;
@@ -75,7 +75,7 @@ em {
   }      
 }
 h1, h2, h3, .btn, .label, header.main, footer.footer {
-  font-family: $f1;
+  font-family: $font-title;
   text-transform: uppercase;
 }
 h1, h2, h3, header.main {
@@ -94,7 +94,7 @@ footer {
   &.footer {
     background-color: #333333;
     color: #eee;
-    padding-bottom: $g1;
+    padding-bottom: $gap-1;
     font-size: 20px;
     .tooltip .tooltip-inner {
       font-family: Arial, Helvetica;
@@ -120,7 +120,7 @@ footer {
      }
    }
    p {
-    margin-top: $g1;
+    margin-top: $gap-1;
     margin-bottom: 0px;
     display: inline-block;
     &.credits {
@@ -196,14 +196,14 @@ header {
     float: none;
     display: inline-block;
     vertical-align: top;
-    margin-left: $g1;
+    margin-left: $gap-1;
 
 
   }
   @media screen and (max-width: 767px) {
    margin-left: 0px;
-   margin-bottom: $g1;
-   padding-top: $g1;
+   margin-bottom: $gap-1;
+   padding-top: $gap-1;
    width: 100%;
    .btn {
      display: block;
@@ -211,7 +211,7 @@ header {
    }
  }
  .btn {
-  padding: $g1 20px;
+  padding: $gap-1 20px;
   @include radius(2px);
   background-color: #ffcf00;
   color: #333;

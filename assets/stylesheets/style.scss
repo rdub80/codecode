@@ -1,38 +1,21 @@
 // brand variables
 
-// Title font
-$f1: dense;
+// Fonts
+$font-title: dense;
+$font-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-mono: "Courier New", Courier, monospace;
+$font-icon: FontAwesome;
 
-// Text font
+// Gap
+$gap-1: 10px;
 
-$f2: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
-// Monospace font
-$f3: "Courier New", Courier, monospace;
-
-// Icon font
-$f4: FontAwesome;
-
-// base gap
-$g1: 10px;
-
-// background color
-$c0: violet;
-
-//text color
-$c1: green;
-
-// accent color
-$c2: #666;
-
-// color 3
-$c3: brown;
-
-// color 4
-$c4: red;
-
-// color 5
-$c5: blue;
+// Colors
+$color-bg: violet;
+$color-primary: green;
+$color-secondary: #666;
+$color-tertiary: brown;
+$color-4: red;
+$color-5: blue;
 
 @import 'base';
 @import 'mixins';

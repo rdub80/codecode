@@ -4,39 +4,22 @@
 // brand variables
 // make sure most of your rules point to that
 
-// Title font
-\$f1: ${1:Georgia, serif};
+// Fonts
+\$font-title: ${1:Georgia, serif};
+\$font-text: ${2:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif};
+\$font-mono: ${3:"Courier New", Courier, monospace};
+\$font-icon: ${4:FontAwesome};
 
-// Text font
+// Gap
+\$gap-1: ${5:10px};
 
-\$f2: ${2:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif};
-
-// Monospace font
-\$f3: ${3:"Courier New", Courier, monospace};
-
-// Icon font
-\$f4: ${4:FontAwesome};
-
-// base gap
-\$g1: ${5:10px};
-
-// background color
-\$c0: ${6:white};
-
-//text color
-\$c1: ${7:black};
-
-// accent color
-\$c2: ${8:grey};
-
-// color 3
-\$c3: ${9:red};
-
-// color 4
-\$c4: ${10:green};
-
-// color 5
-\$c5: ${11:blue};
+// Colors
+\$color-bg: ${6:white};
+\$color-primary: ${7:black};
+\$color-secondary: ${8:grey};
+\$color-tertiary: ${9:red};
+\$color-4: ${10:green};
+\$color-5: ${11:blue};
 
 ${6:// for each import:
 // 1. create new file as _IMPORTNAMEHERE.scss

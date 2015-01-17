@@ -8,7 +8,7 @@ a.label, .label a {
     &:after {
         content: "\f129";
         float: right;
-        font-family: $f4;
+        font-family: $font-icon;
         font-size: 16px;
         margin: -5px 5px 0 10px;
         background-color: darken(#d2a800, 7%);
@@ -23,7 +23,7 @@ a.label, .label a {
         padding-left: 23px;
         &:before {
             float: left;
-            font-family: $f4;
+            font-family: $font-icon;
             font-size: 15px;
             padding: 0;
             position: absolute;

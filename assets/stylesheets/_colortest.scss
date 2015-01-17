@@ -74,7 +74,7 @@
     @include reset(all);
   li{
    heighT: 100px;
-   font-family: $f1;
+   font-family: $font-title;
    text-transform: uppercase;
    display: block;
    padding: 5px 10px;
@@ -86,144 +86,144 @@
   }
 &:first-of-type {
    .cell:first-of-type li {
-  background-color: $c0;
+  background-color: $color-bg;
 }
 .cell:nth-of-type(2) {
-  @include colortest(light, $c0);
+  @include colortest(light, $color-bg);
 }
 .cell:nth-of-type(3) {
-  @include colortest(dark, $c0);
+  @include colortest(dark, $color-bg);
 }
 .cell:nth-of-type(4) {
-  @include colortest(complementary, $c0);
+  @include colortest(complementary, $color-bg);
 }
 .cell:nth-of-type(5) {
-  @include colortest(triad, $c0);
+  @include colortest(triad, $color-bg);
 }
 .cell:nth-of-type(6) {
-  @include colortest(analogous, $c0);
+  @include colortest(analogous, $color-bg);
 }
 .cell:nth-of-type(7) {
-  @include colortest(split, $c0);
+  @include colortest(split, $color-bg);
 }
 }
 &:nth-of-type(2) {
    .cell:first-of-type li {
-  background-color: $c1;
+  background-color: $color-primary;
 }
 .cell:nth-of-type(2) {
-  @include colortest(light, $c1);
+  @include colortest(light, $color-primary);
 }
 .cell:nth-of-type(3) {
-  @include colortest(dark, $c1);
+  @include colortest(dark, $color-primary);
 }
 .cell:nth-of-type(4) {
-  @include colortest(complementary, $c1);
+  @include colortest(complementary, $color-primary);
 }
 .cell:nth-of-type(5) {
-  @include colortest(triad, $c1);
+  @include colortest(triad, $color-primary);
 }
 .cell:nth-of-type(6) {
-  @include colortest(analogous, $c1);
+  @include colortest(analogous, $color-primary);
 }
 .cell:nth-of-type(7) {
-  @include colortest(split, $c1);
+  @include colortest(split, $color-primary);
 }
 }
 
 &:nth-of-type(3) {
    .cell:first-of-type li {
-  background-color: $c2;
+  background-color: $color-secondary;
 }
 .cell:nth-of-type(2) {
-  @include colortest(light, $c2);
+  @include colortest(light, $color-secondary);
 }
 .cell:nth-of-type(3) {
-  @include colortest(dark, $c2);
+  @include colortest(dark, $color-secondary);
 }
 .cell:nth-of-type(4) {
-  @include colortest(complementary, $c2);
+  @include colortest(complementary, $color-secondary);
 }
 .cell:nth-of-type(5) {
-  @include colortest(triad, $c2);
+  @include colortest(triad, $color-secondary);
 }
 .cell:nth-of-type(6) {
-  @include colortest(analogous, $c2);
+  @include colortest(analogous, $color-secondary);
 }
 .cell:nth-of-type(7) {
-  @include colortest(split, $c2);
+  @include colortest(split, $color-secondary);
 }
 }
 
 &:nth-of-type(4) {
    .cell:first-of-type li {
-  background-color: $c3;
+  background-color: $color-tertiary;
 }
 .cell:nth-of-type(2) {
-  @include colortest(light, $c3);
+  @include colortest(light, $color-tertiary);
 }
 .cell:nth-of-type(3) {
-  @include colortest(dark, $c3);
+  @include colortest(dark, $color-tertiary);
 }
 .cell:nth-of-type(4) {
-  @include colortest(complementary, $c3);
+  @include colortest(complementary, $color-tertiary);
 }
 .cell:nth-of-type(5) {
-  @include colortest(triad, $c3);
+  @include colortest(triad, $color-tertiary);
 }
 .cell:nth-of-type(6) {
-  @include colortest(analogous, $c3);
+  @include colortest(analogous, $color-tertiary);
 }
 .cell:nth-of-type(7) {
-  @include colortest(split, $c3);
+  @include colortest(split, $color-tertiary);
 }
 }
 
 &:nth-of-type(5) {
    .cell:first-of-type li {
-  background-color: $c4;
+  background-color: $color-4;
 }
 .cell:nth-of-type(2) {
-  @include colortest(light, $c4);
+  @include colortest(light, $color-4);
 }
 .cell:nth-of-type(3) {
-  @include colortest(dark, $c4);
+  @include colortest(dark, $color-4);
 }
 .cell:nth-of-type(4) {
-  @include colortest(complementary, $c4);
+  @include colortest(complementary, $color-4);
 }
 .cell:nth-of-type(5) {
-  @include colortest(triad, $c4);
+  @include colortest(triad, $color-4);
 }
 .cell:nth-of-type(6) {
-  @include colortest(analogous, $c4);
+  @include colortest(analogous, $color-4);
 }
 .cell:nth-of-type(7) {
-  @include colortest(split, $c4);
+  @include colortest(split, $color-4);
 }
 }
 
 &:nth-of-type(6) {
    .cell:first-of-type li {
-  background-color: $c5;
+  background-color: $color-5;
 }
 .cell:nth-of-type(2) {
-  @include colortest(light, $c5);
+  @include colortest(light, $color-5);
 }
 .cell:nth-of-type(3) {
-  @include colortest(dark, $c5);
+  @include colortest(dark, $color-5);
 }
 .cell:nth-of-type(4) {
-  @include colortest(complementary, $c5);
+  @include colortest(complementary, $color-5);
 }
 .cell:nth-of-type(5) {
-  @include colortest(triad, $c5);
+  @include colortest(triad, $color-5);
 }
 .cell:nth-of-type(6) {
-  @include colortest(analogous, $c5);
+  @include colortest(analogous, $color-5);
 }
 .cell:nth-of-type(7) {
-  @include colortest(split, $c5);
+  @include colortest(split, $color-5);
 }
 }
 }
