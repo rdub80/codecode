@@ -14,10 +14,10 @@
 \$gap-1: ${5:10px};
 
 // Colors
-\$color-bg: ${6:white};
-\$color-primary: ${7:black};
-\$color-secondary: ${8:grey};
-\$color-tertiary: ${9:red};
+\$color-0: ${6:white};
+\$color-1: ${7:black};
+\$color-2: ${8:grey};
+\$color-4: ${9:red};
 \$color-4: ${10:green};
 \$color-5: ${11:blue};
 

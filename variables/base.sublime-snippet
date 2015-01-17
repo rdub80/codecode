@@ -27,12 +27,12 @@
 
 h1, h2, h3, h4 {
     font-family: \$font-title;
-    color: \$color-primary;
+    color: \$color-1;
 }
 
 body {
     font-family: \$font-text;
-    background-color: \$color-bg;
+    background-color: \$color-0;
 }
 
 :focus {
@@ -41,7 +41,7 @@ body {
 }
 
 a {
-    color: \$color-secondary;
+    color: \$color-2;
       -webkit-transition:  all 300ms ease-out;
       -moz-transition:     all 300ms ease-out;
       -ms-transition:      all 300ms ease-out;
