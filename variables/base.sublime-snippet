@@ -27,12 +27,12 @@
 
 h1, h2, h3, h4 {
   font-family: \$font-title;
-  bg-color: \$color-0;
   color: \$color-1;
 }
 
 body {
   font-family: \$font-text;
+  background-color: \$color-0;
 }
 
 :focus {
