@@ -1,5 +1,3 @@
-
-
 h2 {
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
@@ -14,8 +12,8 @@ body {
   color: #333;
 }
 a:not(.btn) {
-      @include reset(link);
-      
+  @include reset(link);
+
 }
 ul {
  list-style-type: disc;
@@ -43,7 +41,7 @@ ol {
   }
 }
 span.code {
-      display: inline-block !important;
+  display: inline-block !important;
 }
 em {
   font-style:  italic;
@@ -59,7 +57,7 @@ em {
 .tooltip {
   width: 300px;
   &.left .tooltip-inner {
-    @include translate(90, 0); 
+    @include translate(90, 0);
   }
   .tooltip-inner {
     text-align: left;
@@ -72,7 +70,7 @@ em {
       border-top: solid 1px #ccc;
       padding: 3px 0px;
     }
-  }      
+  }
 }
 h1, h2, h3, .btn, .label, header.main, footer.footer {
   font-family: $font-title;
@@ -134,9 +132,9 @@ footer {
           height: 32px;
           text-align: center;
           width: 32px;
-          @include translate(0, -15); 
+          @include translate(0, -15);
           i {
-            @include translate(0, -2); 
+            @include translate(0, -2);
           }
           &:first-of-type {
             margin-left: 0px;
@@ -218,7 +216,7 @@ header {
   border: none;
   @include trans;
   &:hover {
-    @include translate(0, 2); 
+    @include translate(0, 2);
     background-color: lighten(#ffcf00, 20%);
   }
 }
@@ -235,12 +233,12 @@ header {
   }
 }
 .ribbon {
-  position: fixed; 
+  position: fixed;
   @media screen and (max-width: 767px) {
     position: absolute;
   }
-  top: 0; 
-  right: 0; 
+  top: 0;
+  right: 0;
   width: 130px;
   height: 130px;
   border: 0;
@@ -257,11 +255,11 @@ header {
     color: black;
     background-color: #ffcf00;
   }
-        &.master {
+  &.master {
     background-color: darken(#ffcf00, 20%);
-      &:hover {
-    background-color: darken(#ffcf00, 10%);
-  }
+    &:hover {
+      background-color: darken(#ffcf00, 10%);
     }
-  
+  }
+
 }

@@ -5,31 +5,32 @@
 // make sure most of your rules point to that
 
 // Fonts
-\$font-title: ${1:Georgia, serif};
-\$font-text: ${2:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif};
-\$font-mono: ${3:"Courier New", Courier, monospace};
-\$font-icon: ${4:FontAwesome};
+\$font-title: Georgia, serif;
+\$font-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+\$font-mono: "Courier New", Courier, monospace;
+\$font-icon: FontAwesome;
 
 // Gap
-\$gap-1: ${5:10px};
+\$gap-1: 10px;
 
 // Colors
-\$color-0: ${6:white};
-\$color-1: ${7:black};
-\$color-2: ${8:grey};
-\$color-4: ${9:red};
-\$color-4: ${10:green};
-\$color-5: ${11:blue};
+\$color-0: white;
+\$color-1: black;
+\$color-2: grey;
+\$color-3: red;
+\$color-4: green;
+\$color-5: blue;
 
-${6:// for each import:
+// for each import:
 // 1. create new file as _IMPORTNAMEHERE.scss
 // 2. inside it, type the same name('base' for base, 'mixins' for mixins, etc), hit tab, to populate content, save
 // 3. uncomment import to activate
 
-}// universal rules (try not to change it, and update often)
+// universal rules (try not to change it, and update often)
 
 // @import 'base';
 // @import 'mixins';
+// @import 'colors';
 // @import 'animate';
 // @import 'print';
 

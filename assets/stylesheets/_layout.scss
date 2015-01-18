@@ -1,238 +1,238 @@
 a.label, .label a {
-    display: block;
+  display: block;
 }
 
 .label[data-toggle="collapse"] {
-    cursor: pointer;
-    padding-right: 37px;
-    &:after {
-        content: "\f129";
-        float: right;
-        font-family: $font-icon;
-        font-size: 16px;
-        margin: -5px 5px 0 10px;
-        background-color: darken(#d2a800, 7%);
-        @include size(27px, 32px);
-        position: absolute;
-        padding-top: 8px;
-    }
+  cursor: pointer;
+  padding-right: 37px;
+  &:after {
+    content: "\f129";
+    float: right;
+    font-family: $font-icon;
+    font-size: 16px;
+    margin: -5px 5px 0 10px;
+    background-color: darken(#d2a800, 7%);
+    @include size(27px, 32px);
+    position: absolute;
+    padding-top: 8px;
+  }
 }
 
 .label {
-    &.new, &.update {
-        padding-left: 23px;
-        &:before {
-            float: left;
-            font-family: $font-icon;
-            font-size: 15px;
-            padding: 0;
-            position: absolute;
-            margin-lefT: -18px;
-            margin-top: 3px;
-            @include wobble($count: infinite);
-        }
+  &.new, &.update {
+    padding-left: 23px;
+    &:before {
+      float: left;
+      font-family: $font-icon;
+      font-size: 15px;
+      padding: 0;
+      position: absolute;
+      margin-lefT: -18px;
+      margin-top: 3px;
+      @include wobble($count: infinite);
     }
-    &.new:before {
-        content: "\f005";
-    }
-    &.update:before {
-        content: "\f006";
-    }
+  }
+  &.new:before {
+    content: "\f005";
+  }
+  &.update:before {
+    content: "\f006";
+  }
 }
 
 ul.code {
-    @include reset(all);
+  @include reset(all);
+  display: inline-block !important;
+  li {
+    @extend .code;
     display: inline-block !important;
-    li {
-        @extend .code;
-        display: inline-block !important;
-        margin-bottom: 3px !important;
-        &:not(:first-of-type) {
-            margin-left: -4px;
-        }
+    margin-bottom: 3px !important;
+    &:not(:first-of-type) {
+      margin-left: -4px;
     }
-    &:hover {
-        @include reset(all);
-    }
+  }
+  &:hover {
+    @include reset(all);
+  }
 }
 
 ul, ol {
-    &:not(.macros) {
-        margin: 0;
-        margin-left: 20px;
-        padding: 0;
-    }
+  &:not(.macros) {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+  }
 }
 
 .macros {
-    padding: 0;
+  padding: 0;
 }
 
 .tooltip .code {
-    background-color: rgba(225, 225, 0, 0.4);
+  background-color: rgba(225, 225, 0, 0.4);
 }
 
 .hidden1 {
-    position: absolute;
-    left: -5000px;
+  position: absolute;
+  left: -5000px;
 }
 
 .hidden {
-    displaY: none;
+  displaY: none;
 }
 
 form {
-    vertical-align: top;
-    input[type="email"] {
-        padding: 18px 15px;
-        width: 200px;
-        -webkit-border-top-right-radius: 0;
-        -webkit-border-bottom-right-radius: 0;
-        -webkit-border-bottom-left-radius: 5px;
-        -webkit-border-top-left-radius: 5px;
-        -moz-border-radius-topright: 0;
-        -moz-border-radius-bottomright: 0;
-        -moz-border-radius-bottomleft: 5px;
-        -moz-border-radius-topleft: 5px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 5px;
-        border-top-left-radius: 5px;
-        border: none;
-    }
-    .btn {
-        width: 60px;
-        -webkit-border-top-right-radius: 5px;
-        -webkit-border-bottom-right-radius: 5px;
-        -webkit-border-bottom-left-radius: 0;
-        -webkit-border-top-left-radius: 0;
-        -moz-border-radius-topright: 5px;
-        -moz-border-radius-bottomright: 5px;
-        -moz-border-radius-bottomleft: 0;
-        -moz-border-radius-topleft: 0;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-    }
+  vertical-align: top;
+  input[type="email"] {
+    padding: 18px 15px;
+    width: 200px;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+  }
+  .btn {
+    width: 60px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
 }
 
 .system:before {
-    @include only(mac) {
-        content: "mac";
-    }
+  @include only(mac) {
+    content: "mac";
+  }
 
-    @include only(windows) {
-        content: "windows";
-    }
+  @include only(windows) {
+    content: "windows";
+  }
 
-    @include only(android) {
-        content: "android";
-    }
+  @include only(android) {
+    content: "android";
+  }
 
-    @include only(linux) {
-        content: "linux";
-    }
+  @include only(linux) {
+    content: "linux";
+  }
 }
 
 .browser:before {
-    @include only(safari) {
-        content: "safari";
-    }
+  @include only(safari) {
+    content: "safari";
+  }
 
-    @include only(firefox) {
-        content: "firefox";
-    }
+  @include only(firefox) {
+    content: "firefox";
+  }
 
-    @include only(chrome) {
-        content: "chrome";
-    }
+  @include only(chrome) {
+    content: "chrome";
+  }
 
-    @include only(ie) {
-        content: "ie";
-    }
+  @include only(ie) {
+    content: "ie";
+  }
 }
 
 hr {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 h2 + h2 {
-    margin-top: 0px;
-    padding-top: 0px;
-    border-top: none;
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: none;
 }
 
 .panel {
-    @include radius(0);
+  @include radius(0);
+  @include reset(all);
+  @include shadow(none);
+  &:last-of-type {
+    margin-bottom: 10px !important;
+  }
+  h3 {
     @include reset(all);
-    @include shadow(none);
-    &:last-of-type {
-        margin-bottom: 10px !important;
-    }
-    h3 {
-        @include reset(all);
-    }
-    a[data-toggle="collapse"] {
-        @include reset(all);
-        padding: 10px 0 5px 0;
-        display: block;
-    }
-    .collapse {
-        @include reset(all);
-    }
+  }
+  a[data-toggle="collapse"] {
+    @include reset(all);
+    padding: 10px 0 5px 0;
+    display: block;
+  }
+  .collapse {
+    @include reset(all);
+  }
 }
 
 .demo {
-    h2 {
-        font-size: 25px;
-        padding: 5px 0 !important;
-        margin: 0;
-        &:first-of-type {
-            border-top: none;
-        }
-        @media screen and (max-width: 1000px) {
-            text-align: center;
-        }
+  h2 {
+    font-size: 25px;
+    padding: 5px 0 !important;
+    margin: 0;
+    &:first-of-type {
+      border-top: none;
     }
-    .gif {
-        background-image: url(../images/dropdown.gif);
-        background-repeat: no-repeat;
-        @media screen and (max-width: 1000px) {
-            background-position: center center;
-        }
-        width: 100%;
-        height: 220px;
-        margin-top: 20px;
+    @media screen and (max-width: 1000px) {
+      text-align: center;
     }
+  }
+  .gif {
+    background-image: url(../images/dropdown.gif);
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1000px) {
+      background-position: center center;
+    }
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+  }
 }
 
 html:not(.mac) .visible-mac,
 html:not(.windows) .visible-windows,
 html:not(.linux) .visible-linux {
-    display: none;
+  display: none;
 }
 
 .in {
-    margin-bottom: 20px;
-    h3 {
-        margin: 5px 0;
-    }
-    .code {
-        display: block;
-    }
+  margin-bottom: 20px;
+  h3 {
+    margin: 5px 0;
+  }
+  .code {
+    display: block;
+  }
 }
 
 .show-touch {
-    display: inline-block;
-    @include unless(touch) {
-        display: none;
-    }
+  display: inline-block;
+  @include unless(touch) {
+    display: none;
+  }
 }
 
 .hide-touch {
-    display: none;
-    @include unless(touch) {
-        display: inline-block;
-    }
+  display: none;
+  @include unless(touch) {
+    display: inline-block;
+  }
 }
