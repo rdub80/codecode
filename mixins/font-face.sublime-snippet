@@ -9,7 +9,7 @@ $path: (defaults to '../fonts/'),
 $stretch,
 $transform
  */
-}@include font-face(${1:font-family}, '${2:font-title}');
+}@include font-face(${1:font title}, '${2: font filename}');
 ]]>
   </content>
   <tabTrigger>font-face</tabTrigger>
