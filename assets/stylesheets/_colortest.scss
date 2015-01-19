@@ -72,12 +72,26 @@
   ul {
     @include reset(all);
     li {
-      heighT: 100px;
-      font-family: $font-title;
-      text-transform: uppercase;
+      height: 100px;
       display: block;
-      padding: 5px 10px;
-      font-size: 20px;
+      input {
+        border: 0;
+        font-family: $font-text;
+        padding: 5px;
+        color: white;
+        background-color: rgba(0,0,0,.3);
+        font-size: 12px;
+        width: 100%;
+        @include trans;
+      }
+      @include unless(touch) {
+        input {
+          @include opacity(0);
+        }
+        &:hover input {
+          @include opacity(100);
+        }
+      }
     }
   }
   &:last-of-type {
