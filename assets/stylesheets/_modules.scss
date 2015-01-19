@@ -95,7 +95,7 @@ footer {
     padding-bottom: $gap-1;
     font-size: 20px;
     .tooltip .tooltip-inner {
-      font-family: Arial, Helvetica;
+      font-family: $font-text;
       text-transform: none;
     }
     a {

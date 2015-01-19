@@ -1,0 +1,17 @@
+<snippet>
+  <content>
+<![CDATA[
+${3:/* set font-family and font-title (if title is same as family, set just font-family)
+other options are:
+$font-weight,
+$font-style,
+$font-path: (defaults to ../fonts/),
+$font-stretch,
+$text-transform
+ */
+}@include font-face(${1:font-family}, '${2:font-title}');
+]]>
+  </content>
+  <tabTrigger>font-face</tabTrigger>
+  <description>Font-face mixin</description>
+</snippet>
