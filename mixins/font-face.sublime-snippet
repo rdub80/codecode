@@ -1,13 +1,13 @@
 <snippet>
   <content>
 <![CDATA[
-${3:/* set font-family and font-title (if title is same as family, set just font-family)
+${3:/* set title and file (if file is same as title, set just the first)
 other options are:
-$font-weight,
-$font-style,
-$font-path: (defaults to ../fonts/),
-$font-stretch,
-$text-transform
+$weight,
+$style,
+$path: (defaults to '../fonts/'),
+$stretch,
+$transform
  */
 }@include font-face(${1:font-family}, '${2:font-title}');
 ]]>
