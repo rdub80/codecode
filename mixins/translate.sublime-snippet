@@ -1,9 +1,9 @@
 <snippet>
 	<content>
 <![CDATA[
-@include translate(${1:left}, ${2:top});
+@include translate(${2:x}, ${3:y}${1:, ${4:z}, 3d});
 ]]>
 	</content>
 	<tabTrigger>translate</tabTrigger>
-	<description>Size</description>
+	<description>Translate or translate 3D mixin</description>
 </snippet>

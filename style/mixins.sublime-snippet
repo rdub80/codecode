@@ -1,6 +1,6 @@
 <snippet>
   <content>
-<![CDATA[
+    <![CDATA[
 @mixin size(\$width: 5px, \$height: 5px) {
     width: \$width;
     height: \$height;
@@ -116,12 +116,6 @@
     transition: \$prop \$time \$ease;
 }
 
-@mixin translate3d(\$x: 0, \$y: 0, \$z: 0) {
-    -webkit-transform: translate3d(\$x, \$y, \$z);
-    -moz-transform: translate3d(\$x, \$y, \$z);
-    transform: translate3d(\$x, \$y, \$z);
-}
-
 @mixin rotate(\$rotate: 0) {
     -webkit-transform: rotate(\$rotate + deg);
     -moz-transform: rotate(\$rotate + deg);
@@ -146,12 +140,21 @@
     transform: skew(\$skew + deg);
 }
 
-@mixin translate(\$left: 0, \$top: 0) {
-    -webkit-transform: translate(\$left + px, \$top + px);
-    -moz-transform: translate(\$left + px, \$top + px);
-    -ms-transform: translate(\$left + px, \$top + px);
-    -o-transform: translate(\$left + px, \$top + px);
-    transform: translate(\$left + px, \$top + px);
+@mixin translate(\$x: 0, \$y: 0, \$z: 0, \$type: other) {
+
+  @if \$type == 3d {
+    -webkit-transform: translate3d(\$x + px, \$y + px, \$z + px);
+    -moz-transform: translate3d(\$x + px, \$y + px, \$z + px);
+    -o-transform: translate3d(\$x + px, \$y + px, \$z + px);
+    transform: translate3d(\$x + px, \$y + px, \$z + px);
+}
+@else {
+ -webkit-transform: translate(\$x + px, \$y + px);
+ -moz-transform: translate(\$x + px, \$y + px);
+ -ms-transform: translate(\$x + px, \$y + px);
+ -o-transform: translate(\$x + px, \$y + px);
+ transform: translate(\$x + px, \$y + px);
+}
 }
 
 @mixin orient(\$orientation: landscape) {
@@ -422,8 +425,8 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
     }
 }
 
-]]>
-  </content>
-  <tabTrigger>mixins</tabTrigger>
-  <description>Mixins</description>
+    ]]>
+</content>
+<tabTrigger>mixins</tabTrigger>
+<description>Mixins</description>
 </snippet>
