@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-hidden-lg
-]]></content>
-  <tabTrigger>visibility</tabTrigger>
-  <description>all but large desktops</description>
-</snippet>

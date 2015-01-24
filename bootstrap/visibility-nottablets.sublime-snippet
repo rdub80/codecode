@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-hidden-sm
-]]></content>
-  <tabTrigger>visibility</tabTrigger>
-  <description>all but tablets</description>
-</snippet>

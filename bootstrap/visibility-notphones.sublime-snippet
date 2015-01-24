@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-hidden-xs
-]]></content>
-  <tabTrigger>visibility</tabTrigger>
-  <description>all but phones</description>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-visible-md
-]]></content>
-  <tabTrigger>visibility</tabTrigger>
-  <description>medium desktops only (992px to 1200px))</description>
-</snippet>

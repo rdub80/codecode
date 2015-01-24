@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-visible-xs
-]]></content>
-  <tabTrigger>visibility</tabTrigger>
-  <description>phones only (less than 768px)</description>
-</snippet>
