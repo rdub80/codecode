@@ -343,7 +343,7 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
     // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
         @font-face {
-            font-family: \$font-family;
+            font-family: \$title;
             src: url("#{\$path}+#{\$file}.svg##{\$title}") format("svg");
         }
     }
