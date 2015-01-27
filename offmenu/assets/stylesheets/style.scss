@@ -5,5 +5,10 @@ $color-2: grey;
 $color-3: red;
 $color-4: green;
 $color-5: blue;
-@import 'mixins';
-@import 'offmenu';
+@import '../../../assets/stylesheets/mixins';
+@import '../../../assets/stylesheets/offmenu';
+
+
+.container {
+  width: 600px !important;
+}

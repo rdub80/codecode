@@ -1,13 +1,12 @@
-$side-width:             250px;
-$side-duration:          .4s;
-$side-position:          left;
+$offmenu-width:             250px;
+$offmenu-duration:          .4s;
+$offmenu-position:          left;
 
-$side-fade:              true;
-$side-container-blur:    false;
+$offmenu-fade:              true;
+$offmenu-container-blur:    false;
 
-.side-content {
-  /* critical sizing and position styles */
-  width: $side-width;
+.offmenu {
+  width: $offmenu-width;
   height: 100%;
   position: fixed;
   top: 0;
@@ -15,42 +14,42 @@ $side-container-blur:    false;
   right: 0;
   bottom: 0;
   z-index: 0;
-  padding: 10px;
+  padding: 20px;
   @include box;
   background: #111;
   color: white;
-  @if $side-fade == true {
+  @if $offmenu-fade == true {
     @include opacity(0);
-    #side-toggle:checked + & {
+    #offmenu-toggle:checked + & {
       @include opacity(100);
     }
   }
 
-  @if $side-position == "left" {
+  @if $offmenu-position == "left" {
     left: 0;
   }
-  @else if $side-position == "right" {
+  @else if $offmenu-position == "right" {
    right: 0;
  }
 }
-.container {
+.offmenu-content {
   min-height: 100%;
   min-width: 100%;
   background-color: $color-0;
   position: relative;
   top: 0 !important;
   bottom: 100%;
-  @if $side-position == "left" {
+  @if $offmenu-position == "left" {
     left: 0;
   }
-  @else if $side-position == "right" {
+  @else if $offmenu-position == "right" {
    right: 0;
  }
  z-index: 1;
 }
 
 
-label[for="side-toggle"] {
+label[for="offmenu-toggle"] {
   position: fixed;
   top: 0;
   z-index: 2;
@@ -62,50 +61,50 @@ label[for="side-toggle"] {
     font-size: 30px;
     padding: 5px;
     font-family: $font-icon;
-    #side-toggle:checked ~ & {
+    #offmenu-toggle:checked ~ & {
     content: "\f057";
   }
   }
 
-  @if $side-position == "left" {
+  @if $offmenu-position == "left" {
     left: 0;
   }
-  @else if $side-position == "right" {
+  @else if $offmenu-position == "right" {
     right: 0;
   }
 }
 
-#side-toggle {
+#offmenu-toggle {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   &:checked {
-    & ~ label[for="side-toggle"] {
-      @if $side-position == "left" {
-        left: $side-width;
+    & ~ label[for="offmenu-toggle"] {
+      @if $offmenu-position == "left" {
+        left: $offmenu-width;
       }
-      @else if $side-position == "right" {
-       right: $side-width;
+      @else if $offmenu-position == "right" {
+       right: $offmenu-width;
      }
    }
-   & ~ .container {
-    @if $side-container-blur == true {
+   & ~ .offmenu-content {
+    @if $offmenu-container-blur == true {
       * {
         @include trans;
         @include filter(blur, 2px);
       }
     }
-    @if $side-position == "left" {
-     left: $side-width;
+    @if $offmenu-position == "left" {
+     left: $offmenu-width;
    }
-   @else if $side-position == "right" {
-     right: $side-width;
+   @else if $offmenu-position == "right" {
+     right: $offmenu-width;
    }
  }
 }
 }
 
-#side-toggle ~ label[for="side-toggle"], .container {
-  transition: $side-position $side-duration;
+#offmenu-toggle ~ label[for="offmenu-toggle"], .offmenu-content {
+  transition: $offmenu-position $offmenu-duration;
 }
 body {
   overflow-x: hidden;
