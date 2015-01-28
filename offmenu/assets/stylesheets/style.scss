@@ -10,7 +10,8 @@ $color-5: blue;
 
 
 .container {
-  width: 600px !important;
+  max-width: 600px;
+
   i {
     font-size: 20px;
     padding: 0 5px;
