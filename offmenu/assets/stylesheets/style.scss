@@ -11,4 +11,18 @@ $color-5: blue;
 
 .container {
   width: 600px !important;
+  i {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+}
+tt {
+  background-color: lighten(yellow, 40%);
+  color: darken(yellow, 30%);
+  padding: 3px;
+}
+li p {
+  margin-bottom: 0;
+  font-style: italic;
+  color: #666;
 }
