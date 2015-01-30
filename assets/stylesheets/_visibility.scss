@@ -17,6 +17,6 @@ html.ie .hidden-ie,
 html:not(.safari) .visible-safari,
 html.safari .hidden-safari,
 html:not(.touch) .visible-touch,
-html.touch .hidden-touch  {
+html.touch .hidden-touch, .hidden  {
   display: none !important;
 }
