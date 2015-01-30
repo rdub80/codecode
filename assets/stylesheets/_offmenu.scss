@@ -1,6 +1,7 @@
-$offmenu-width:             250px;
-$offmenu-duration:          .4s;
-$offmenu-position:          left;
+$offmenu-width:             200px;     // menu width
+$offmenu-duration:          .4s;       // appear duration
+$offmenu-position:          left;      // menu position: left|right
+$offmenu-animate:           false;      // true|false, requires _animate.scss
 
 $offmenu-fade:              true;
 $offmenu-container-blur:    false;
@@ -32,7 +33,10 @@ $offmenu-container-blur:    false;
    right: 0;
  }
 }
+
+
 .offmenu-content {
+
   min-height: 100%;
   min-width: 100%;
   background-color: $color-0;
@@ -56,13 +60,23 @@ label[for="offmenu-toggle"] {
   cursor: pointer;
 
   &:before {
-    content: "\f0c9";
+    content: '☰';
       vertical-align: middle;
     font-size: 30px;
     padding: 5px;
-    font-family: $font-icon;
+    @if $offmenu-animate == true {
+      @if $offmenu-position == "left" {
+        // fadeInLeft;
+      }
+      @else if $offmenu-position == "right" {
+       // fadeInRight;
+      }
+    }
     #offmenu-toggle:checked ~ & {
-    content: "\f057";
+    content: '╳';
+    @if $offmenu-animate == true {
+      // rotateIn;
+    }
   }
   }
   @if $offmenu-position == "left" {
