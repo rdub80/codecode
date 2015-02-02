@@ -1,3 +1,46 @@
+ul.stars {
+    @include reset(list);
+        @include reset(all);
+
+li {
+  display: inline-block;
+  margin-left: -5px;
+  &:before {
+    font-size:20px;
+    line-height: 20px;
+    content: '☆';
+  }
+
+}
+&.one, &.two, &.three, &.four, &.five {
+  li:first-of-type:before {
+    content: '★';
+  }
+}
+&.two, &.three, &.four, &.five {
+  li:nth-of-type(2):before {
+    content: '★';
+  }
+}
+&.three, &.four, &.five {
+  li:nth-of-type(3):before {
+    content: '★';
+  }
+}
+&.four, &.five {
+  li:nth-of-type(4):before {
+    content: '★';
+  }
+}
+&.five {
+  li:nth-of-type(5):before {
+    content: '★';
+  }
+}
+
+
+}
+
 i.icon {
   font-style: normal;
   display: inline-block;
