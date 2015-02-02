@@ -1,6 +1,10 @@
 a.label, .label a {
   display: block;
 }
+.unicode {
+  padding-top: $gap-1;
+  padding-bottom: $gap-1;
+}
 
 .label[data-toggle="collapse"] {
   cursor: pointer;
