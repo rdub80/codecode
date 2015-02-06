@@ -20,12 +20,12 @@ $color-5: blue;
 @import 'base';
 @import 'mixins';
 @import 'colors';
-@import 'icons';
 @import 'visibility';
 @import 'animate';
 @import 'colortest';
 @import 'layout';
 @import 'modules';
+@import 'icons';
 
 a[data-toggle="collapse"] {
   color: #333;
