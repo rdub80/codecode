@@ -391,80 +391,59 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
     }
 }
 
-@mixin media($device: ipad, $scope: strict, $variation: mini) {
-    @if $device == "ipad" {
-        @if $scope == "portrait" {
-            @media only screen and (max-width: 768px) {
-                @content;
-            }
-        }
-        @else if $scope == "landscape" {
-            @media only screen and (max-width: 1024px) {
-                @content;
-            }
-        }
-        @else {
-            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                @content;
-            }
-        }
+@mixin media($device, $orientation: false) {
+
+  // A map storing device widths in lists
+  $devices: (
+    ipad: 768px 1024px,
+    iphone4: 320px 480px,
+    iphone5: 320px 568px,
+    iphone6: 375px 667px,
+    iphone6plus: 414px 736px,
+    galaxy: 360px 640px
+  );
+
+  // A list of the device names (ipad, iphone4, iphone5, etc.)
+  // It's not NECESSARY to grab this separately, but it makes the below code easier to follow
+  $device-names: map-keys($devices);
+
+  // Check to see if the passed device name is on that list
+  @if type-of(index($device-names, $device)) == 'number' {
+
+    // Store the list of values associated with the device name
+    $this-device-value: map-get($devices, $device);
+
+    // If orientation is 'portrait', grab the portrait max-width
+    @if $orientation == 'portrait' {
+      @media only screen and (max-width: nth($this-device-value, 1)) {
+        @content;
+      }
     }
-    @else if $device == "iphone5" {
-        @if $scope == "portrait" {
-            @media only screen and (max-width: 320px) {
-                @content;
-            }
-        }
-        @else if $scope == "landscape" {
-            @media only screen and (max-width: 568px) {
-                @content;
-            }
-        }
-        @else {
-            @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-                @content;
-            }
-        }
+
+    // If orientation is 'landscape', grab the landscape max-width
+    @else if $orientation == 'landscape' {
+      @media only screen and (max-width: nth($this-device-value, 2)) {
+        @content;
+      }
     }
-    @else if $device == "iphone6" {
-        @if $scope == "portrait" {
-            @media only screen and (max-width: 375px) {
-                @content;
-            }
-        }
-        @else if $scope == "landscape" {
-            @media only screen and (max-width: 667px) {
-                @content;
-            }
-        }
-        @else {
-            @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-                @content;
-            }
-        }
-    }
-    @else if $device == "iphone4" {
-        @if $scope == "portrait" {
-            @media only screen and (max-width: 320px) {
-                @content;
-            }
-        }
-        @else if $scope == "landscape" {
-            @media only screen and (max-width: 480px) {
-                @content;
-            }
-        }
-        @else {
-            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-                @content;
-            }
-        }
-    }
+
+    // If orientation is either nothing or something else, grab both
     @else {
-        @media screen and ($scope + -width: $device) {
-            @content;
-        }
+      @media only screen
+        and (min-device-width: nth($this-device-value, 1))
+        and (max-device-width: nth($this-device-value, 2)) {
+          @content;
+      }
     }
+  }
+
+  // Allow for custom input
+  @else {
+    @media screen and ($orientation + -width: $device){
+      @content;
+    }
+  }
+
 }
 
 
