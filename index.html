@@ -165,26 +165,20 @@
     <ul class="macros">
      <li data-toggle="tooltip"
      data-html="true" data-placement="bottom"
-     title="popular CDN javascript libraries" class="label">js</li>
+     title="popular CDN javascript libraries" class="label update">js</li>
      <li data-toggle="tooltip"
      data-html="true" data-placement="bottom"
      title="popular CDN CSS libraries" class="label">css</li>
      <li data-toggle="tooltip"
      data-html="true" data-placement="bottom"
      title="responsive gist embed (for RSS readers)" class="label new">gist</li>
+     <li data-toggle="tooltip"
+     data-html="true" data-placement="bottom"
+     title="flexslider gallery HTML template<hr>Requires JS and CSS counterparts" class="label new">flexslider</li>
    </ul>
 
  </div>
  <div class="col-md-3">
-   <h2>Javascript macros</h2>
-   <p>Click to visit official library page.</p>
-   <ul class="macros">
-     <li><a href="http://getbootstrap.com/javascript/" target="other" class="label">bootstrap</a></li>
-     <li><a href="https://github.com/barisaydinoglu/Detectizr" target="other" class="label">detectizr</a></li>
-     <li><a href="http://jquery.com" target="other" class="label">jquery</a></li>
-     <li><a href="http://modernizr.com" target="other" class="label">modernizr</a></li>
-     <li><a href="http://weblinc.github.io/jquery.smoothState.js/index.html" target="other" class="label">smoothstate</a></li>
-   </ul>
    <h2>Style macros</h2>
    <p>All base SASS macros. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
    <ul class="macros">
@@ -209,12 +203,15 @@
         <hr>
         Soon: a live, actionable color map, per project (you change your color variables, it changes accordingly).
       </div>
-    <li data-toggle="tooltip"
+    <!-- <li data-toggle="tooltip"
     data-html="true" data-placement="bottom"
-    title="master animate list<hr>Requires <span class='code'>style</span><hr>Refer to animate macros list" class="label">animate</li>
+    title="master animate list<hr>Requires <span class='code'>style</span><hr>Refer to animate macros list" class="label">animate</li> -->
     <li data-toggle="tooltip"
     data-html="true" data-placement="bottom"
     title="Print CSS rules" class="label new">print</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="flexslider CSS rules" class="label new">flexslider</li>
     </ul>
    <h2>SASS helpers macros</h2>
    <p><span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
@@ -229,228 +226,20 @@
   </ul>
 </div>
 <div class="col-md-3">
-  <h2>Mixins macros</h2>
-  <p>In order to use these macros, add <span class="code">mixins</span> up somewhere on your SASS tree. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
-  <ul class="macros">
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="master mixins list<hr>required to use macros on this list" class="label master update">mixins</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="border-box<hr>Requires <span class='code'>mixins</span>" class="label">box</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="center object verticallly and horizontally<hr>Requires <span class='code'>mixins</span>" class="label">centerer</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="clearfix<hr>Requires <span class='code'>mixins</span>" class="label">clear</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="background cover (spans all object)<hr>Requires <span class='code'>mixins</span>" class="label">cover</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="a hack to object to major iOS sizes. variable is px you detract from it.<hr>Requires <span class='code'>mixins</span>" class="label">devicewidth</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="disable function:
-    <ul>
-    <li><span class='code'>link</span></li>
-    <li><span class='code'>select</span>, for text</li>
-    <li><span class='code'>drag</span>, for images, div</li>
-  </ul>
-    <hr>Requires <span class='code'>mixins</span>" class="label update">disable</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="hides text with ...<hr>Requires <span class='code'>mixins</span>" class="label">ellipsis</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="filter effects<hr>Requires <span class='code'>mixins</span>" class="label">filter</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="font-face mixin<hr>Requires <span class='code'>mixins</span>" class="label new">font-face</li>
-    <li class="label" data-toggle="collapse" href="#grid">
-      grid</li>
-      <div id="grid" class="collapse">
-        Simple grid with same-width columns that collapses automatically on phone devices.
-        <ol>
-          <li>Apply it in the parent element</li>
-          <li>Child elements (columns) should be either: li, dt, section or class <span class="code">.cell</span></li>
-        </ol>
-        First variable is number of columns, second variable is gutter (in pixels).
-        <hr>
-        Requires <span class='code'>mixins</span>
-      </div>
-      <li data-toggle="tooltip"
-      data-html="true" data-placement="bottom"
-      title="simple gradient<hr>Requires <span class='code'>mixins</span>" class="label">gradient</li>
-      <li data-toggle="tooltip"
-      data-html="true" data-placement="bottom"
-      title="quick grid: define number of cells, gutter (defaults to 20px) and make sure columns have class .cell<hr>Requires <span class='code'>mixins</span>" class="label update">grid</li>
-      <li data-toggle="tooltip"
-      data-html="true" data-placement="bottom"
-      title="hides object text<hr>Requires <span class='code'>mixins</span>" class="label">hide-text</li>
-      <li class="label" data-toggle="collapse" href="#media">
-        media</li>
-        <div id="media" class="collapse">
-          Media queries for most devices. You can either use numbers, like
-          <div class="code">
-            @include media(200px, max) {<br>
-
-          }
-        </div> and it outputs as <div class="code">
-        @media screen and (max-width: 200px) {<br>
-
-      }
-    </div>
-    variables are number and min|max.<hr>
-    Alternatively, you can use proper device names:  <ul class="code">
-    <li>ipad</li>
-    <li>iphone6</li>
-    <li>iphone5</li>
-    <li>iphone4</li>
-  </ul> with more to come. scope variable options are <span class="code">strict</span> (rules apply only to device), <span class="code">landscape</span> (rules apply to landscape and smaller) and <span class="code">portrait</span> (rules apply to portrait and smaller)
-  <hr>
-  Requires <span class='code'>mixins</span>
-</div>
-<li class="label" data-toggle="collapse" href="#only">
-  Only</li>
-  <div id="only" class="collapse">
-    <span class="code">only</span> puts modernizr and detectizr to use. for instance,
-    <div class="code">@include unless(touch) {</br>
-      background: red;</br>
-    }</div>
-    makes background red unless in touchscreen devices (but not on desktop), or
-    <div class="code">@include unless(android) {</br>
-      display: none;</br>
-    }</div>
-    hides object only on android systems.<hr>
-    Some useful Modernizr tags are <ul class="code">
-    <li>csscolumns</li>
-    <li>flexbox</li>
-    <li>fontface</li>
-    <li>touch</li>
-    <li>flash</li>
-  </ul>.
-  <hr>
-  Some useful Detectizr tags are systems <ul class="code">
-  <li>mac</li>
-  <li>windows</li>
-  <li>linux</li>
-  <li>android</li>
-</ul>, browsers
-<ul class="code">
-  <li>ie</li>
-  <li>firefox</li>
-  <li>safari</li>
-</ul>
-and browser versions
-<ul class="code">
-  <li>ie9</li>
-  <li>safari8</li>
-</ul>.
-<hr>
-Requires <span class='code'>mixins</span>, modernizr, detectizr, SASS 3.1
-</div>
-<li data-toggle="tooltip"
-data-html="true" data-placement="bottom"
-title="transparency<hr>Requires <span class='code'>mixins</span>" class="label">opacity</li>
-<li data-toggle="tooltip"
-data-html="true" data-placement="bottom"
-title="Media query for orientation<hr>Requires <span class='code'>mixins</span>" class="label">orient</li>
-<li data-toggle="tooltip"
-data-html="true" data-placement="bottom"
-title="rules for input placeholders<hr>Requires <span class='code'>mixins</span>" class="label">placeholder</li>
-<li data-toggle="tooltip"
-data-html="true" data-placement="bottom"
-title="add radius to objects: uniform or custom<hr>Requires <span class='code'>mixins</span>" class="label">radius</li>
-<li data-toggle="tooltip"
-data-html="true" data-placement="bottom"
-title="cheesy reflect effect<hr>Requires <span class='code'>mixins</span>" class="label">reflect</li>
-<li class="label" data-toggle="collapse" href="#reset">
-  reset</li>
-  <div id="reset" class="collapse">
-    Resets object properties. variables are
-    <ul>
-      <li><span class="code">all</span> (resets margin, padding, border)</li>
-      <li><span class="code">margin</span> (resets margin)</li>
-      <li><span class="code">padding</span> (resets padding)</li>
-      <li><span class="code">border</span> (resets border)</li>
-      <li><span class="code">bg</span> (resets background)</li>
-      <li><span class="code">list</span> (resets list)</li>
-    </ul>
-    <hr>
-    Requires <span class='code'>mixins</span>
-  </div>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="rotate object<hr>Requires <span class='code'>mixins</span>" class="label">rotate</li>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="scale object<hr>Requires <span class='code'>mixins</span>" class="label">scale</li>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="adds shadow if there's more to scroll. variable is bg color<hr>Requires <span class='code'>mixins</span>" class="label">scroll-hint</li>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="text and box shadow<hr>Requires <span class='code'>mixins</span>" class="label">shadow</li>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="a quick resizer, width|height<hr>Requires <span class='code'>mixins</span>" class="label">size</li>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="skew object<hr>Requires <span class='code'>mixins</span>" class="label">skew</li>
-  <li data-toggle="tooltip"
-  data-html="true" data-placement="bottom"
-  title="for square sizes<hr>Requires <span class='code'>mixins</span>" class="label">square</li>
-  <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="transition for animation<hr>Requires <span class='code'>mixins</span>" class="label">trans</li>
-    <li data-toggle="tooltip"
-    data-html="true" data-placement="bottom"
-    title="translate object, plus 3d<hr>Requires <span class='code'>mixins</span>" class="label update">translate</li>
-  <li class="label" data-toggle="collapse" href="#unless">
-    unless</li>
-    <div id="unless" class="collapse">
-      <span class="code">unless</span> puts modernizr and detectizr to use with rules that affect all instances <em>except</em> the one listed. for instance,
-      <div class="code">@include unless(linux) {</br>
-        background: red;</br>
-      }</div>
-      makes background red everywhere, <em>unless</em> it's a linux machine.
-      <hr>
-      Some useful Modernizr tags are <ul class="code">
-      <li>csscolumns</li>
-      <li>flexbox</li>
-      <li>fontface</li>
-      <li>touch</li>
-      <li>flash</li>
-    </ul>.
-    <hr>
-    Some useful Detectizr tags are systems <ul class="code">
-    <li>mac</li>
-    <li>windows</li>
-    <li>linux</li>
-    <li>android</li>
-  </ul>, browsers
-  <ul class="code">
-    <li>ie</li>
-    <li>firefox</li>
-    <li>safari</li>
-  </ul>
-  and browser versions
-  <ul class="code">
-    <li>ie9</li>
-    <li>safari8</li>
-  </ul>.
-  <hr>
-  Requires <span class='code'>mixins</span>, modernizr, detectizr, SASS 3.1
-</div>
-<li data-toggle="tooltip"
-data-html="true" data-placement="bottom"
-title="forces word-wrap<hr>Requires <span class='code'>mixins</span>" class="label">word-wrap</li>
-</ul>
-</div>
-<div class="col-md-3">
   <h2>Animate.css macros</h2>
+  <p>I'm currently refactoring <a href="http://daneden.github.io/animate.css/" target="other">animate.css</a>, using a new repo.</p>
+   <h2>Javascript macros</h2>
+   <p>Click to visit official library page.</p>
+   <ul class="macros">
+     <li><a href="http://getbootstrap.com/javascript/" target="other" class="label">bootstrap</a></li>
+     <li><a href="https://github.com/barisaydinoglu/Detectizr" target="other" class="label">detectizr</a></li>
+     <li><a href="http://jquery.com" target="other" class="label">jquery</a></li>
+     <li><a href="http://modernizr.com" target="other" class="label">modernizr</a></li>
+     <li><a href="http://weblinc.github.io/jquery.smoothState.js/index.html" target="other" class="label">smoothstate</a></li>
+     <li><a href="http://flexslider.woothemes.com" target="other" class="label new">flexslider</a></li>
+   </ul>
+<!--
+
   <p>  macros from a <a href="https://github.com/geoffgraham/animate.scss" target="other">SCSS port</a> of famous <a href="http://daneden.github.io/animate.css/" target="other">animate.css</a> framework.</p>
   <ul class="macros">
     <li data-toggle="tooltip"
@@ -816,6 +605,228 @@ title="forces word-wrap<hr>Requires <span class='code'>mixins</span>" class="lab
       </div>
     </div>
   </div>
+ -->
+</div>
+<div class="col-md-3">
+  <h2>Mixins macros</h2>
+  <p>In order to use these macros, add <span class="code">mixins</span> up somewhere on your SASS tree. <span class="hide-touch">Hover</span><span class="show-touch">Click</span> for more info.</p>
+  <ul class="macros">
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="master mixins list<hr>required to use macros on this list" class="label master update">mixins</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="border-box<hr>Requires <span class='code'>mixins</span>" class="label">box</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="center object verticallly and horizontally<hr>Requires <span class='code'>mixins</span>" class="label">centerer</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="clearfix<hr>Requires <span class='code'>mixins</span>" class="label">clear</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="background cover (spans all object)<hr>Requires <span class='code'>mixins</span>" class="label">cover</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="a hack to object to major iOS sizes. variable is px you detract from it.<hr>Requires <span class='code'>mixins</span>" class="label">devicewidth</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="disable function:
+    <ul>
+    <li><span class='code'>link</span></li>
+    <li><span class='code'>select</span>, for text</li>
+    <li><span class='code'>drag</span>, for images, div</li>
+  </ul>
+    <hr>Requires <span class='code'>mixins</span>" class="label update">disable</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="hides text with ...<hr>Requires <span class='code'>mixins</span>" class="label">ellipsis</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="filter effects<hr>Requires <span class='code'>mixins</span>" class="label">filter</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="font-face mixin<hr>Requires <span class='code'>mixins</span>" class="label new">font-face</li>
+    <li class="label" data-toggle="collapse" href="#grid">
+      grid</li>
+      <div id="grid" class="collapse">
+        Simple grid with same-width columns that collapses automatically on phone devices.
+        <ol>
+          <li>Apply it in the parent element</li>
+          <li>Child elements (columns) should be either: li, dt, section or class <span class="code">.cell</span></li>
+        </ol>
+        First variable is number of columns, second variable is gutter (in pixels).
+        <hr>
+        Requires <span class='code'>mixins</span>
+      </div>
+      <li data-toggle="tooltip"
+      data-html="true" data-placement="bottom"
+      title="simple gradient<hr>Requires <span class='code'>mixins</span>" class="label">gradient</li>
+      <li data-toggle="tooltip"
+      data-html="true" data-placement="bottom"
+      title="quick grid: define number of cells, gutter (defaults to 20px) and make sure columns have class .cell<hr>Requires <span class='code'>mixins</span>" class="label update">grid</li>
+      <li data-toggle="tooltip"
+      data-html="true" data-placement="bottom"
+      title="hides object text<hr>Requires <span class='code'>mixins</span>" class="label">hide-text</li>
+      <li class="label" data-toggle="collapse" href="#media">
+        media</li>
+        <div id="media" class="collapse">
+          Media queries for most devices. You can either use numbers, like
+          <div class="code">
+            @include media(200px, max) {<br>
+
+          }
+        </div> and it outputs as <div class="code">
+        @media screen and (max-width: 200px) {<br>
+
+      }
+    </div>
+    variables are number and min|max.<hr>
+    Alternatively, you can use proper device names:  <ul class="code">
+    <li>ipad</li>
+    <li>iphone6</li>
+    <li>iphone5</li>
+    <li>iphone4</li>
+  </ul> with more to come. scope variable options are <span class="code">strict</span> (rules apply only to device), <span class="code">landscape</span> (rules apply to landscape and smaller) and <span class="code">portrait</span> (rules apply to portrait and smaller)
+  <hr>
+  Requires <span class='code'>mixins</span>
+</div>
+<li class="label" data-toggle="collapse" href="#only">
+  Only</li>
+  <div id="only" class="collapse">
+    <span class="code">only</span> puts modernizr and detectizr to use. for instance,
+    <div class="code">@include unless(touch) {</br>
+      background: red;</br>
+    }</div>
+    makes background red unless in touchscreen devices (but not on desktop), or
+    <div class="code">@include unless(android) {</br>
+      display: none;</br>
+    }</div>
+    hides object only on android systems.<hr>
+    Some useful Modernizr tags are <ul class="code">
+    <li>csscolumns</li>
+    <li>flexbox</li>
+    <li>fontface</li>
+    <li>touch</li>
+    <li>flash</li>
+  </ul>.
+  <hr>
+  Some useful Detectizr tags are systems <ul class="code">
+  <li>mac</li>
+  <li>windows</li>
+  <li>linux</li>
+  <li>android</li>
+</ul>, browsers
+<ul class="code">
+  <li>ie</li>
+  <li>firefox</li>
+  <li>safari</li>
+</ul>
+and browser versions
+<ul class="code">
+  <li>ie9</li>
+  <li>safari8</li>
+</ul>.
+<hr>
+Requires <span class='code'>mixins</span>, modernizr, detectizr, SASS 3.1
+</div>
+<li data-toggle="tooltip"
+data-html="true" data-placement="bottom"
+title="transparency<hr>Requires <span class='code'>mixins</span>" class="label">opacity</li>
+<li data-toggle="tooltip"
+data-html="true" data-placement="bottom"
+title="Media query for orientation<hr>Requires <span class='code'>mixins</span>" class="label">orient</li>
+<li data-toggle="tooltip"
+data-html="true" data-placement="bottom"
+title="rules for input placeholders<hr>Requires <span class='code'>mixins</span>" class="label">placeholder</li>
+<li data-toggle="tooltip"
+data-html="true" data-placement="bottom"
+title="add radius to objects: uniform or custom<hr>Requires <span class='code'>mixins</span>" class="label">radius</li>
+<li data-toggle="tooltip"
+data-html="true" data-placement="bottom"
+title="cheesy reflect effect<hr>Requires <span class='code'>mixins</span>" class="label">reflect</li>
+<li class="label" data-toggle="collapse" href="#reset">
+  reset</li>
+  <div id="reset" class="collapse">
+    Resets object properties. variables are
+    <ul>
+      <li><span class="code">all</span> (resets margin, padding, border)</li>
+      <li><span class="code">margin</span> (resets margin)</li>
+      <li><span class="code">padding</span> (resets padding)</li>
+      <li><span class="code">border</span> (resets border)</li>
+      <li><span class="code">bg</span> (resets background)</li>
+      <li><span class="code">list</span> (resets list)</li>
+    </ul>
+    <hr>
+    Requires <span class='code'>mixins</span>
+  </div>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="rotate object<hr>Requires <span class='code'>mixins</span>" class="label">rotate</li>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="scale object<hr>Requires <span class='code'>mixins</span>" class="label">scale</li>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="adds shadow if there's more to scroll. variable is bg color<hr>Requires <span class='code'>mixins</span>" class="label">scroll-hint</li>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="text and box shadow<hr>Requires <span class='code'>mixins</span>" class="label">shadow</li>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="a quick resizer, width|height<hr>Requires <span class='code'>mixins</span>" class="label">size</li>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="skew object<hr>Requires <span class='code'>mixins</span>" class="label">skew</li>
+  <li data-toggle="tooltip"
+  data-html="true" data-placement="bottom"
+  title="for square sizes<hr>Requires <span class='code'>mixins</span>" class="label">square</li>
+  <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="transition for animation<hr>Requires <span class='code'>mixins</span>" class="label">trans</li>
+    <li data-toggle="tooltip"
+    data-html="true" data-placement="bottom"
+    title="translate object, plus 3d<hr>Requires <span class='code'>mixins</span>" class="label update">translate</li>
+  <li class="label" data-toggle="collapse" href="#unless">
+    unless</li>
+    <div id="unless" class="collapse">
+      <span class="code">unless</span> puts modernizr and detectizr to use with rules that affect all instances <em>except</em> the one listed. for instance,
+      <div class="code">@include unless(linux) {</br>
+        background: red;</br>
+      }</div>
+      makes background red everywhere, <em>unless</em> it's a linux machine.
+      <hr>
+      Some useful Modernizr tags are <ul class="code">
+      <li>csscolumns</li>
+      <li>flexbox</li>
+      <li>fontface</li>
+      <li>touch</li>
+      <li>flash</li>
+    </ul>.
+    <hr>
+    Some useful Detectizr tags are systems <ul class="code">
+    <li>mac</li>
+    <li>windows</li>
+    <li>linux</li>
+    <li>android</li>
+  </ul>, browsers
+  <ul class="code">
+    <li>ie</li>
+    <li>firefox</li>
+    <li>safari</li>
+  </ul>
+  and browser versions
+  <ul class="code">
+    <li>ie9</li>
+    <li>safari8</li>
+  </ul>.
+  <hr>
+  Requires <span class='code'>mixins</span>, modernizr, detectizr, SASS 3.1
+</div>
+<li data-toggle="tooltip"
+data-html="true" data-placement="bottom"
+title="forces word-wrap<hr>Requires <span class='code'>mixins</span>" class="label">word-wrap</li>
+</ul>
 </div>
 </div>
 </div>
