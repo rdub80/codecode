@@ -25,7 +25,7 @@ a.label, .label a {
 
 .label {
   &.new, &.update {
-    padding-left: 23px;
+    padding-left: 23px !important;
     &:before {
       float: left;
       font-family: $font-icon;
