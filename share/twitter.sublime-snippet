@@ -3,7 +3,7 @@
 <![CDATA[
 <a href="http://twitter.com/home?status=${1:Visit my website} ${2:http://www.nicholasfrota.com} ${3:@nonlinear}"
  target="_blank">
- ${5:<i class="fa fa-twitter"></i>}
+ ${4:<i class="fa fa-twitter"></i>}
 </a>
 ]]>
   </content>

@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+<a href="mailto:?subject=${1:SUBJECT TITLE}&body=${2:CONTENT + URL}">
+  ${3:<i class="fa fa-envelope-o"></i>}
+</a>
+]]>
+  </content>
+  <tabTrigger>email</tabTrigger>
+  <description>Email Share Link</description>
+</snippet>
