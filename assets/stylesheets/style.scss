@@ -22,11 +22,11 @@ $color-5: blue;
 @import "colors";
 @import "visibility";
 @import "animate";
-@import "colortest";
+@import "test_color";
+@import "test_media";
 @import "layout";
 @import "modules";
 @import "icons";
-@import "media";
 
 a[data-toggle="collapse"] {
   color: #333;
