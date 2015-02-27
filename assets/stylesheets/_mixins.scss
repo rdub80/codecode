@@ -425,6 +425,23 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
       }
     }
   }
+    @else if $device == "iphone6" {
+    @if $scope == "portrait" {
+      @media only screen and (max-width: 375px) {
+        @content;
+      }
+    }
+    @else if $scope == "landscape" {
+      @media only screen and (max-width: 667px) {
+        @content;
+      }
+    }
+    @else {
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+        @content;
+      }
+    }
+  }
   @else if $device == "iphone4" {
     @if $scope == "portrait" {
       @media only screen and (max-width: 320px) {
@@ -442,19 +459,20 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
       }
     }
   }
-  @else if $device == "iphone6" {
+
+    @else if $device == "iphone6plus" {
     @if $scope == "portrait" {
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 414px) {
         @content;
       }
     }
     @else if $scope == "landscape" {
-      @media only screen and (max-width: 667px) {
+      @media only screen and (max-width: 736px) {
         @content;
       }
     }
     @else {
-      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
         @content;
       }
     }
