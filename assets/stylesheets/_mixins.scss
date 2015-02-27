@@ -7,27 +7,29 @@
   @include size($size, $size);
 }
 
-@mixin placeholder {
-  &.placeholder {
-    @content;
-  }
-  &::-webkit-input-placeholder {
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
-  &:focus::-webkit-input-placeholder {
-    transition: all 0.5s 0.1s ease;
-    text-indent: -50%;
-    opacity: 0;
-  }
+@mixin placeholder($animate: true) {
+    &.placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    @if $animate == "true" {
+        &:focus::-webkit-input-placeholder {
+            transition: all 0.5s 0.1s ease;
+            text-indent: -50%;
+            opacity: 0;
+        }
+    }
 }
 
 @mixin disable($type: link) {
