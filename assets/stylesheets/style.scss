@@ -54,7 +54,7 @@ a.label {
   heigth: 100%;
   h3 {
     bottom: 0;
-    @include centerer;
+    position: fixed;
   }
   &:before, &:after {
     font-family: $font-title;
