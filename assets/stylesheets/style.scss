@@ -26,6 +26,7 @@ $color-5: blue;
 @import "layout";
 @import "modules";
 @import "icons";
+@import "media";
 
 a[data-toggle="collapse"] {
   color: #333;
@@ -50,109 +51,3 @@ a.label {
   padding: 5px !important;
 }
 
-.media {
-  heigth: 100%;
-  h3 {
-    bottom: 0;
-    position: fixed;
-  }
-  &:before, &:after {
-    display: block;
-    background-color: brown;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    z-index: 20000;
-    font-size: 12px;
-  }
-  &:after {
-    top: 25px;
-  }
-  @include media(ipad, strict) {
-    &:before {
-      content: "ipad, strict";
-    }
-    @include orient(landscape) {
-      &:after {
-        content: "landscape";
-      }
-    }
-
-    @include orient(portrait) {
-      &:after {
-        content: "portrait";
-      }
-    }
-  }
-
-
-  @include media(iphone4, strict) {
-    &:before {
-      content: "iphone4, strict";
-    }
-    @include orient(landscape) {
-      &:after {
-        content: "landscape";
-      }
-    }
-
-    @include orient(portrait) {
-      &:after {
-        content: "portrait";
-      }
-    }
-  }
-
-  @include media(iphone5, strict) {
-    &:before {
-      content: "iphone5, strict";
-    }
-    @include orient(landscape) {
-      &:after {
-        content: "landscape";
-      }
-    }
-
-    @include orient(portrait) {
-      &:after {
-        content: "portrait";
-      }
-    }
-  }
-
-  @include media(iphone6, strict) {
-    &:before {
-      content: "iphone6, strict";
-    }
-    @include orient(landscape) {
-      &:after {
-        content: "landscape";
-      }
-    }
-
-    @include orient(portrait) {
-      &:after {
-        content: "portrait";
-      }
-    }
-  }
-
-  @include media(iphone6plus, strict) {
-    &:before {
-      content: "iphone6plus, strict";
-    }
-    @include orient(landscape) {
-      &:after {
-        content: "landscape";
-      }
-    }
-
-    @include orient(portrait) {
-      &:after {
-        content: "portrait";
-      }
-    }
-  }
-}
