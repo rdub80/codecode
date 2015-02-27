@@ -17,15 +17,15 @@ $color-3: brown;
 $color-4: red;
 $color-5: blue;
 
-@import 'base';
-@import 'mixins';
-@import 'colors';
-@import 'visibility';
-@import 'animate';
-@import 'colortest';
-@import 'layout';
-@import 'modules';
-@import 'icons';
+@import "base";
+@import "mixins";
+@import "colors";
+@import "visibility";
+@import "animate";
+@import "colortest";
+@import "layout";
+@import "modules";
+@import "icons";
 
 a[data-toggle="collapse"] {
   color: #333;
@@ -48,4 +48,171 @@ a.label {
 
 .credits a {
   padding: 5px !important;
+}
+
+.media {
+  heigth: 100%;
+  h3 {
+    bottom: 0;
+    @include centerer;
+  }
+  &:before, &:after {
+    font-family: $font-title;
+    text-transform: uppercase;
+    padding: 0;
+    position: fixed;
+    margin: 0;
+    right: 5px;
+    font-size: 30px;
+  }
+  &:before {
+    top: 5px;
+  }
+  &:after {
+    top: 35px;
+  }
+}
+
+.media {
+  @include media(ipad, landscape) {
+    &:before {
+      content: "iPad";
+    }
+    &:after {
+      content: "landscape";
+    }
+  }
+
+  @include media(ipad, portrait) {
+    &:before {
+      content: "iPad";
+    }
+    &:after {
+      content: "portrait";
+    }
+  }
+
+  @include media(ipad, strict) {
+    &:before {
+      content: "ipad";
+    }
+    @include orient(landscape) {
+      &:after {
+        content: "strict + orient(landscape)";
+      }
+    }
+    @include orient(portrait) {
+      &:after {
+        content: "strict + orient(portrait)";
+      }
+    }
+  }
+}
+
+.media {
+  @include media(iphone5, landscape) {
+    &:before {
+      content: "iphone5";
+    }
+    &:after {
+      content: "landscape";
+    }
+  }
+
+  @include media(iphone5, portrait) {
+    &:before {
+      content: "iphone5";
+    }
+    &:after {
+      content: "portrait";
+    }
+  }
+
+  @include media(iphone5, strict) {
+    &:before {
+      content: "iphone5";
+    }
+    @include orient(landscape) {
+      &:after {
+        content: "strict + orient(landscape)";
+      }
+    }
+    @include orient(portrait) {
+      &:after {
+        content: "strict + orient(portrait)";
+      }
+    }
+  }
+}
+
+.media {
+  @include media(iphone4, landscape) {
+    &:before {
+      content: "iphone4";
+    }
+    &:after {
+      content: "landscape";
+    }
+  }
+
+  @include media(iphone4, portrait) {
+    &:before {
+      content: "iphone4";
+    }
+    &:after {
+      content: "portrait";
+    }
+  }
+
+  @include media(iphone4, strict) {
+    &:before {
+      content: "iphone4";
+    }
+    @include orient(landscape) {
+      &:after {
+        content: "strict + orient(landscape)";
+      }
+    }
+    @include orient(portrait) {
+      &:after {
+        content: "strict + orient(portrait)";
+      }
+    }
+  }
+}
+
+.media {
+  @include media(iphone6, landscape) {
+    &:before {
+      content: "iphone6";
+    }
+    &:after {
+      content: "landscape";
+    }
+  }
+
+  @include media(iphone6, portrait) {
+    &:before {
+      content: "iphone6";
+    }
+    &:after {
+      content: "portrait";
+    }
+  }
+
+  @include media(iphone6, strict) {
+    &:before {
+      content: "iphone6";
+    }
+    @include orient(landscape) {
+      &:after {
+        content: "strict + orient(landscape)";
+      }
+    }
+    @include orient(portrait) {
+      &:after {
+        content: "strict + orient(portrait)";
+      }
+    }
+  }
 }

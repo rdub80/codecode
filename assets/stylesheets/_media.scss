@@ -1,0 +1,48 @@
+.media {
+  &:before, &:after {
+    font-family: $font-title;
+    text-transform: uppercase;
+    @include centerer;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+  }
+  &:before {
+    content: "lorem";
+    font-size: 40px;
+  }
+  &:after {
+    content: "";
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  @include media(2560px, max) {
+    &:before {
+      content: "30″ Apple Cinema Display";
+    }
+  }
+  @include media(1280px, max) {
+    &:before {
+      content: "Widescreen";
+    }
+
+  }
+  @include media(ipad) {
+    &:before {
+      content: "iPaaad";
+    }
+    @include orient(portrait) {
+          &:after {
+      content: "Portrait";
+    }
+    }
+        @include orient(landscape) {
+          &:after {
+      content: "Landscape";
+    }
+    }
+
+  }
+
+}
