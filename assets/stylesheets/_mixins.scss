@@ -196,73 +196,82 @@
   background-size: 100% $height;
 }
 
-@mixin grid($column: 12, $gutter: 20px, $border: false, $border-color: #cccccc) {
-  width: 100%;
-  @include box;
-  display: table;
-  & > .cell, & > article, & > li, & > dt, & > section, & > .column {
-    display: table-cell;
-    width: 100% / $column;
-    padding: 0;
+@mixin grid($column: 6, $gutter: 20px, $border: false, $border-color: #cccccc, $collapse: true) {
+    width: 100%;
     @include box;
-    &:not(:first-of-type) {
-      padding-left: $gutter / 2;
+    display: table;
+    @include media(767px, max) {
+        display: block;
     }
-    &:not(:last-of-type) {
-      padding-right: $gutter / 2;
-      @if $border == true {
-        border-right: solid 1px $border-color;
-      }
-    }
-    &.double, &.times2 {
-      width: 100% / $column * 2;
-    }
-    &.triple, &.times3 {
-      width: 100% / $column * 3;
-    }
-    &.times4 {
-      width: 100% / $column * 4;
-    }
-    &.times5 {
-      width: 100% / $column * 5;
-    }
-    &.times6 {
-      width: 100% / $column * 6;
-    }
-    &.times7 {
-      width: 100% / $column * 7;
-    }
-    &.times8 {
-      width: 100% / $column * 8;
-    }
-    &.times9 {
-      width: 100% / $column * 9;
-    }
-    &.times10 {
-      width: 100% / $column * 10;
-    }
-    &.times11 {
-      width: 100% / $column * 11;
-    }
-    @media screen and (max-width: 767px) {
-      width: 100% !important;
-      display: block;
-      float: none;
-      padding: 0;
-      &:not(:first-of-type) {
-        padding-left: 0;
-        padding-top: $gutter / 2;
-      }
-      &:not(:last-of-type) {
-        padding-right: 0;
-        padding-bottom: $gutter / 2;
-        @if $border == true {
-          border-right: none;
-          border-bottom: solid 1px $border-color;
+
+    & > .cell, & > article, & > li, & > dt, & > section, & > .column {
+        display: table-cell;
+        width: 100% / $column;
+        padding: 0;
+        @include box;
+        &:not(:first-of-type) {
+            padding-left: $gutter / 2;
         }
-      }
+        &:not(:last-of-type) {
+            padding-right: $gutter / 2;
+            @if $border == true {
+                border-right: solid 1px $border-color;
+            }
+        }
+        &.double, &.times2 {
+            width: 100% / $column * 2;
+        }
+        &.triple, &.times3 {
+            width: 100% / $column * 3;
+        }
+        &.times4 {
+            width: 100% / $column * 4;
+        }
+        &.times5 {
+            width: 100% / $column * 5;
+        }
+        &.times6 {
+            width: 100% / $column * 6;
+        }
+        &.times7 {
+            width: 100% / $column * 7;
+        }
+        &.times8 {
+            width: 100% / $column * 8;
+        }
+        &.times9 {
+            width: 100% / $column * 9;
+        }
+        &.times10 {
+            width: 100% / $column * 10;
+        }
+        &.times11 {
+            width: 100% / $column * 11;
+        }
+        @if $collapse == 'true' {
+            @include media(767px, max) {
+                width: 100% !important;
+                display: block;
+                float: none;
+                padding: 0;
+                &:not(:first-of-type) {
+                    padding-left: 0;
+                    padding-top: $gutter / 2;
+                }
+                &:last-of-type {
+                    display: block;
+                }
+                &:not(:last-of-type) {
+                    padding-right: 0;
+                    padding-bottom: $gutter / 2;
+                    @if $border == true {
+                        border-right: none;
+                        border-bottom: solid 1px $border-color;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 @mixin scroll-hint($bgcolor: black) {
