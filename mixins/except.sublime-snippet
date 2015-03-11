@@ -1,0 +1,11 @@
+<snippet>
+  <content>
+<![CDATA[
+@include except(${1:only|unless}, ${2:mac}, ${3:html}) {
+	$4
+}
+]]>
+  </content>
+  <tabTrigger>except</tabTrigger>
+  <description>Exception rules</description>
+</snippet>

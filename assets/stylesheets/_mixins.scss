@@ -368,7 +368,18 @@ http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
   -o-background-size: cover !important;
   background-size: cover !important;
 }
-
+@mixin except($function: only, $target: mac, $parent: html) {
+    @if function == only {
+        #{$parent}.#{$target} & {
+            @content;
+        }
+    }
+    @else if function == unless {
+        #{$parent}.#{$target} & {
+            @content;
+        }
+    }
+}
 @mixin only($only: mac) {
   html.#{$only} & {
     @content;
