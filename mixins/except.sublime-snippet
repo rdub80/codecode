@@ -1,7 +1,7 @@
 <snippet>
   <content>
 <![CDATA[
-@include except(${1:only|unless}, ${2:mac}, ${3:html}) {
+@include except(${1:only|unless}, ${2:html}, ${3:mac}) {
 	$4
 }
 ]]>
